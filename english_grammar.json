@@ -1,0 +1,293 @@
+[
+  {
+    "topic": "Present Simple",
+    "explanation": "Usado para ações habituais, fatos gerais, verdades universais e rotinas. Estrutura: sujeito + verbo (base form, acrescenta -s ou -es na 3ª pessoa singular). Também usado em instruções, manchetes e para eventos futuros programados (ex: 'The train leaves at 8').",
+    "restrictions": "Não é usado para ações acontecendo exatamente agora (usa-se Present Continuous). Em verbos de estado (like, know, believe), geralmente não se usa Present Continuous.",
+    "examples": [
+      "I play soccer every Saturday.",
+      "She works at a hospital.",
+      "The sun rises in the east.",
+      "Water boils at 100°C.",
+      "The bus leaves at 7 o’clock tomorrow."
+    ]
+  },
+  {
+    "topic": "Present Continuous",
+    "explanation": "Usado para ações que estão acontecendo agora, situações temporárias e planos futuros próximos. Estrutura: sujeito + am/is/are + verbo com -ing.",
+    "restrictions": "Alguns verbos de estado (know, like, believe, love, understand) raramente aparecem no continuous. Exceções existem em usos mais informais (ex: 'I’m loving this movie').",
+    "examples": [
+      "I am studying English right now.",
+      "She is watching TV in the living room.",
+      "They are building a new school in town.",
+      "I’m meeting my friend tomorrow.",
+      "He is always complaining about the weather."
+    ]
+  },
+  {
+    "topic": "Present Perfect",
+    "explanation": "Usado para conectar passado e presente: experiências de vida, ações que começaram no passado e continuam no presente, ou ações passadas com efeito no presente. Estrutura: sujeito + have/has + particípio passado.",
+    "restrictions": "Não se usa com expressões de tempo terminado (yesterday, last year). Nestes casos, usa-se Past Simple.",
+    "examples": [
+      "I have visited Paris three times.",
+      "She has already finished her homework.",
+      "We have lived here since 2010.",
+      "He has never eaten sushi.",
+      "They have just left the house."
+    ]
+  },
+  {
+    "topic": "Present Perfect Continuous",
+    "explanation": "Usado para enfatizar a duração de uma ação que começou no passado e ainda continua, ou cujos efeitos ainda são visíveis. Estrutura: sujeito + have/has + been + verbo com -ing.",
+    "restrictions": "Normalmente usado com verbos de ação, não com verbos de estado (ex: *know*, *believe*).",
+    "examples": [
+      "I have been studying English for two hours.",
+      "She has been waiting for the bus since 8 o’clock.",
+      "They have been working on this project all week.",
+      "It has been raining all day.",
+      "We have been talking about moving to another city."
+    ]
+  },
+  {
+    "topic": "Past Simple",
+    "explanation": "Usado para ações concluídas em um tempo definido no passado. Estrutura: sujeito + verbo no passado simples (regular ou irregular).",
+    "restrictions": "Não é usado para conectar passado ao presente; nesse caso, usa-se Present Perfect.",
+    "examples": [
+      "I visited London last summer.",
+      "She watched a movie yesterday.",
+      "They went to the park on Sunday.",
+      "We studied together last night.",
+      "He bought a new car two weeks ago."
+    ]
+  },
+  {
+    "topic": "Past Continuous",
+    "explanation": "Usado para descrever ações em progresso em um momento específico do passado ou ações interrompidas por outra. Estrutura: sujeito + was/were + verbo com -ing.",
+    "restrictions": "Não se usa para ações habituais (neste caso, usa-se Past Simple).",
+    "examples": [
+      "I was reading a book when she called.",
+      "They were playing soccer at 5 p.m. yesterday.",
+      "She was sleeping while I was working.",
+      "We were having dinner when the lights went out.",
+      "He was driving too fast when the accident happened."
+    ]
+  },
+  {
+    "topic": "Past Perfect",
+    "explanation": "Usado para indicar uma ação que aconteceu antes de outra ação no passado. Estrutura: sujeito + had + particípio passado.",
+    "restrictions": "Não é necessário se a ordem dos eventos já estiver clara. É mais comum em escrita formal e narrativa.",
+    "examples": [
+      "I had finished my homework before dinner.",
+      "She had already left when I arrived.",
+      "They had never seen the ocean before that trip.",
+      "We had studied English before moving to Canada.",
+      "By the time the movie started, he had fallen asleep."
+    ]
+  },
+  {
+    "topic": "Past Perfect Continuous",
+    "explanation": "Usado para enfatizar a duração de uma ação que estava acontecendo antes de outra no passado. Estrutura: sujeito + had been + verbo com -ing.",
+    "restrictions": "Mais raro na fala cotidiana; usado em narrativas para dar ênfase a tempo/duração.",
+    "examples": [
+      "I had been studying for two hours when she arrived.",
+      "They had been waiting for the bus for an hour before it came.",
+      "She had been working there for five years before quitting.",
+      "We had been walking for miles before we found a place to rest.",
+      "He had been practicing the piano all morning when I visited."
+    ]
+  },
+  {
+    "topic": "Future (will / going to / present continuous)",
+    "explanation": "‘Will’ é usado para decisões espontâneas, promessas e previsões. ‘Going to’ é usado para planos já decididos ou evidências. Present Continuous é usado para arranjos futuros definidos.",
+    "restrictions": "‘Will’ não se usa para planos já decididos; ‘going to’ não se usa para horários fixos (usa-se Present Simple ou Present Continuous).",
+    "examples": [
+      "I will help you with your homework. (decisão espontânea)",
+      "She is going to study medicine. (plano definido)",
+      "Look at those clouds! It’s going to rain. (evidência)",
+      "We are meeting John tomorrow at 6. (arranjo futuro)"
+    ]
+  },
+  {
+    "topic": "Future Perfect",
+    "explanation": "Usado para ações que terão sido concluídas antes de um momento específico no futuro. Estrutura: sujeito + will have + particípio passado.",
+    "restrictions": "Mais usado em escrita formal, raramente em conversas informais.",
+    "examples": [
+      "I will have finished my homework by 9 PM.",
+      "She will have left by the time you arrive.",
+      "They will have built the house by next year.",
+      "By 2026, we will have graduated.",
+      "He will have completed the project before the deadline."
+    ]
+  },
+  {
+    "topic": "Future Perfect Continuous",
+    "explanation": "Usado para enfatizar a duração de uma ação até certo ponto no futuro. Estrutura: sujeito + will have been + verbo com -ing.",
+    "restrictions": "Pouco comum em conversas cotidianas; aparece mais em contextos formais ou acadêmicos.",
+    "examples": [
+      "By next month, I will have been working here for 10 years.",
+      "She will have been studying for three hours by the time you arrive.",
+      "They will have been traveling for a week when we meet them.",
+      "We will have been living in this city for five years in June.",
+      "He will have been practicing all day before the concert."
+    ]
+  },
+  {
+    "topic": "Conditionals",
+    "explanation": "Estruturas condicionais expressam possibilidades, hipóteses ou consequências. Tipos: Zero (fatos gerais), First (possível/futuro), Second (hipotético/presente), Third (hipotético/passado), Mixed.",
+    "restrictions": "A escolha do tempo verbal depende da realidade ou não da condição. Em linguagem informal, ‘if’ pode ser omitido (‘Had I known…’).",
+    "examples": [
+      "If you heat water to 100°C, it boils. (Zero Conditional)",
+      "If it rains tomorrow, we will stay home. (First)",
+      "If I were rich, I would travel the world. (Second)",
+      "If she had studied harder, she would have passed. (Third)",
+      "If I had studied medicine, I would be a doctor now. (Mixed)"
+    ]
+  },
+  {
+    "topic": "Passive Voice",
+    "explanation": "Usada para dar ênfase à ação em vez do sujeito. Estrutura: sujeito + verbo to be (em tempo adequado) + particípio passado.",
+    "restrictions": "Nem todos os verbos podem ser usados na voz passiva (verbos intransitivos, ex: sleep, arrive).",
+    "examples": [
+      "The book was written by George Orwell.",
+      "This house was built in 1990.",
+      "The documents will be sent tomorrow.",
+      "The cake is being prepared right now.",
+      "English is spoken in many countries."
+    ]
+  },
+  {
+    "topic": "Reported Speech",
+    "explanation": "Usado para relatar o que alguém disse. Muitas vezes há mudança de tempo verbal (backshift): Present → Past, Past → Past Perfect etc. Também muda pronomes e expressões de tempo.",
+    "restrictions": "Se a situação ainda for verdadeira, o tempo verbal pode não mudar (‘She said she is tired’).",
+    "examples": [
+      "Direct: She said, 'I am tired.' → Reported: She said she was tired.",
+      "Direct: He said, 'I like pizza.' → Reported: He said he liked pizza.",
+      "Direct: They said, 'We will come tomorrow.' → Reported: They said they would come the next day.",
+      "Direct: She said, 'I have finished.' → Reported: She said she had finished.",
+      "Direct: He asked, 'Where are you going?' → Reported: He asked where I was going."
+    ]
+  },
+  {
+  "topic": "Modals",
+  "explanation": "Modal verbs são verbos auxiliares usados para expressar habilidade, possibilidade, permissão, obrigação, necessidade, probabilidade, hipóteses ou atitudes do falante. Eles são sempre seguidos pelo verbo na forma base (sem 'to'). Cada modal tem usos específicos.",
+  "restrictions": "Modal verbs não mudam de forma (não existe 'to can' ou 'cans'). Não recebem -s na 3ª pessoa do singular. Para expressar passado ou aspectos mais específicos, usam-se construções como 'could' (passado de can), 'should have + particípio' (aconselhamento no passado), 'must have + particípio' (dedução no passado). Alguns modais são pouco usados em contextos informais, como 'shall'.",
+  "examples": [
+    "I can swim very well. (habilidade)",
+    "When I was a child, I could climb trees easily. (habilidade no passado)",
+    "You may leave the room now. (permissão formal)",
+    "It might rain later. (possibilidade incerta)",
+    "You must wear a seatbelt. (obrigação)",
+    "She should see a doctor. (conselho)",
+    "Shall we go for a walk? (sugestão formal)"
+  
+  ]
+},
+
+  {
+    "topic": "Phrasal Verbs",
+    "explanation": "Combinação de verbo + partícula (preposição ou advérbio) que cria novo significado. Podem ser separáveis (turn off the light → turn the light off) ou inseparáveis (look after).",
+    "restrictions": "Nem sempre o significado é literal; muitos são idiomáticos e precisam ser aprendidos caso a caso.",
+    "examples": [
+      "I need to look after my little brother. (cuidar de)",
+      "Please turn off the TV. (desligar)",
+      "We ran into an old friend yesterday. (encontrar por acaso)",
+      "She gave up smoking last year. (desistir de)",
+      "They are looking forward to the holidays. (aguardar ansiosamente)"
+    ]
+  },
+  {
+    "topic": "Used to / Would",
+    "explanation": "Ambos descrevem hábitos ou estados no passado que não acontecem mais. 'Used to' pode ser usado para ações repetidas e estados. 'Would' só pode ser usado para ações repetidas (não para estados). Estrutura: sujeito + used to + verbo (base form) OU sujeito + would + verbo (base form).",
+    "restrictions": "'Would' não é usado para estados passados (ex: *I would live in London* → incorreto. Deve ser *I used to live in London*). 'Used to' não tem forma presente.",
+    "examples": [
+      "I used to play the piano when I was a child. (ação)",
+      "She used to have long hair. (estado)",
+      "We would visit our grandparents every summer. (ação repetida)",
+      "He would always tell us stories. (ação repetida)",
+      "They didn't use to like coffee."
+    ]
+  },
+  {
+    "topic": "Gerunds and Infinitives",
+    "explanation": "Gerúndio (verbo+ing) e infinitivo (to + verbo) são formas verbais que funcionam como substantivos. Alguns verbos são seguidos apenas por gerúndio, outros apenas por infinitivo, e alguns por ambos (com ou sem mudança de significado).",
+    "restrictions": "Não há uma regra única; é necessário memorizar os padrões dos verbos. Ex: 'enjoy' é sempre seguido por gerúndio, 'decide' é sempre seguido por infinitivo, e 'stop' muda de significado ('stop smoking' vs 'stop to smoke').",
+    "examples": [
+      "I enjoy reading books. (verbo + gerúndio)",
+      "She decided to leave early. (verbo + infinitivo)",
+      "He stopped smoking for health reasons. (parar de fazer algo)",
+      "We stopped to rest for a while. (parar para fazer algo)",
+      "It started to rain. / It started raining. (sem mudança de significado)"
+    ]
+  },
+  {
+    "topic": "Relative Clauses",
+    "explanation": "Orações subordinadas que identificam ou dão informações extras sobre um substantivo. Usam pronomes relativos: who (pessoas), which (coisas/animais), that (pessoas/coisas), whose (posse), where (lugares), when (tempo). Podem ser defining (essenciais) ou non-defining (adicionais, entre vírgulas).",
+    "restrictions": "That' não pode ser usado em non-defining clauses. Em defining clauses, o pronome relativo pode ser omitido se for o objeto da oração (ex: 'The book (that) I read was great').",
+    "examples": [
+      "The woman who lives next door is a doctor. (defining)",
+      "My car, which is very old, still works well. (non-defining)",
+      "That's the restaurant where we had dinner.",
+      "He's the guy that I told you about.",
+      "She has a friend whose father is a pilot."
+    ]
+  },
+  {
+    "topic": "Adjectives and Adverbs",
+    "explanation": "Adjetivos descrevem substantivos (ex: a *beautiful* car). Advérbios modificam verbos, adjetivos ou outros advérbios, frequentemente terminando em -ly (ex: she drives *carefully*). Advérbios de intensidade (very, really, extremely) modificam adjetivos ou outros advérbios.",
+    "restrictions": "Alguns advérbios têm a mesma forma que o adjetivo (ex: fast, hard, early). 'Good' é adjetivo, 'well' é geralmente o advérbio (ex: She is a *good* singer. She sings *well*).",
+    "examples": [
+      "He is a slow driver. (adjetivo)",
+      "He drives slowly. (advérbio)",
+      "That movie was really interesting. (advérbio + adjetivo)",
+      "She works extremely hard. (advérbio + advérbio)",
+      "I feel good today. (adjetivo após verbo de ligação)"
+    ]
+  },
+  {
+    "topic": "Comparatives and Superlatives",
+    "explanation": "Usados para comparar coisas ou pessoas. Comparativo (-er / more) compara dois itens. Superlativo (-est / most) identifica um item em um grupo de três ou mais. Adjetivos curtos: -er / -est. Adjetivos longos: more / most.",
+    "restrictions": "Adjetivos irregulares não seguem a regra (good → better → best; bad → worse → worst; far → farther/further → farthest/furthest). 'Than' é usado no comparativo e 'the' no superlativo.",
+    "examples": [
+      "My car is **older than** yours. (comparativo)",
+      "She is **more intelligent than** her brother. (comparativo)",
+      "This is the **happiest** day of my life. (superlativo)",
+      "It was the **most boring** movie I've ever seen. (superlativo)",
+      "This coffee is **worse than** the one we had yesterday. (irregular)"
+    ]
+  },
+  {
+    "topic": "Articles (a, an, the)",
+    "explanation": "'A/An' (artigos indefinidos) são usados com substantivos singulares contáveis não específicos (primeira menção). 'A' antes de som de consoante; 'An' antes de som de vogal. 'The' (artigo definido) é usado com substantivos específicos ou já mencionados.",
+    "restrictions": "Substantivos incontáveis (water, information) e plurais genéricos (cats) não usam artigo. Não se usa artigo antes de nomes de países (exceto os que contêm 'Kingdom', 'States', etc.), idiomas, refeições, ou lugares como 'home', 'work', 'school'.",
+    "examples": [
+      "I saw a dog. The dog was barking. (primeira menção → menção específica)",
+      "She is an architect. (som de vogal)",
+      "The sun is very bright today. (único/ específico)",
+      "Love is more important than money. (sem artigo - incontável)",
+      "They are at school right now. (sem artigo - lugar como conceito)"
+    ]
+  },
+  {
+    "topic": "Question Tags",
+    "explanation": "Pequenas perguntas curtas no final de uma frase para confirmar informação, pedir concordância ou tornar a frase menos assertiva. Seguem o princípio do 'afirmativo + negativo' e vice-versa. Usam o auxiliar e o pronome correspondente ao sujeito da frase principal.",
+    "restrictions": "Com 'I am', a question tag é 'aren't I?'. Frases imperativas geralmente usam 'will you?' ou 'won't you?'. Frases com 'Let's' usam 'shall we?'.",
+    "examples": [
+      "You like coffee, don't you? (afirmativo → negativo)",
+      "She isn't coming, is she? (negativo → afirmativo)",
+      "I'm early, aren't I? (exceção com 'I am')",
+      "Open the window, will you? (imperativo)",
+      "Let's go to the beach, shall we? (sugestão com 'Let's')"
+    ]
+  },
+  {
+    "topic": "Either, Neither, So, Too",
+    "explanation": "Usados para expressar concordância ou adição em frases negativas e afirmativas. 'So' e 'Too' concordam com frases afirmativas. 'Either' e 'Neither' concordam com frases negativas. A estrutura auxiliar é invertida com 'So' e 'Neither'.",
+    "restrictions": "'Neither' já carrega sentido negativo, portanto o verbo auxiliar deve ser na forma afirmativa (ex: Neither **do** I - nunca *Neither don't I*). 'Too' e 'Either' vão no final da frase.",
+    "examples": [
+      "I love pizza! - So do I! / I do too! (concordância afirmativa)",
+      "I can't swim. - Neither can I. / I can't either. (concordância negativa)",
+      "She is tired. - So am I.",
+      "They didn't go. - Neither did we.",
+      "He will be there. - I will too."
+    ]
+  }
+]

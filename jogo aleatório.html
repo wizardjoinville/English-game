@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎡 English Practice Tool</title>
+  <meta name="description" content="Interactive tool to practice English questions and vocabulary at all CEFR levels">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    :root {
+      --primary: #8A2BE2;
+      --primary-dark: #7B1FA2;
+      --secondary: #9370DB;
+      --accent: #FF69B4;
+      --accent-dark: #E91E63;
+      --light: #F8F9FF;
+      --dark: #2E2E3A;
+      --dark-light: #4A4A5A;
+      --success: #20BF55;
+      --warning: #FFD166;
+      --danger: #EF476F;
+      --glass: rgba(255, 255, 255, 0.2);
+      --glass-border: rgba(255, 255, 255, 0.3);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      
+      /* Cores para cada nível CEFR */
+      --a1-color: #4CAF50; /* Verde para A1 */
+      --a2-color: #8BC34A; /* Verde claro para A2 */
+      --b1-color: #FFC107; /* Amarelo para B1 */
+      --b2-color: #FF9800; /* Laranja para B2 */
+      --c1-color: #FF5722; /* Laranja escuro para C1 */
+      --c2-color: #F44336; /* Vermelho para C2 */
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--dark);
+      overflow-x: hidden;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+      overflow: hidden;
+      opacity: 0.1;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+      z-index: 1;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.2;
+    }
+    
+    .mode-selector {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      gap: 0.5rem;
+      background: rgba(138, 43, 226, 0.05);
+      padding: 0.5rem;
+      border-radius: 50px;
+      width: fit-content;
+      margin: 0 auto 1.5rem;
+    }
+    
+    .mode-btn {
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      background: transparent;
+      border: none;
+      color: var(--dark-light);
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      font-size: 0.9rem;
+    }
+    
+    .mode-btn.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem;
+    }
+    
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      min-width: 200px;
+      text-align: left;
+    }
+    
+    .control-group label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: var(--dark-light);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    select, input {
+      appearance: none;
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem 0.7rem 1rem;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234A4A5A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.7rem center;
+      background-size: 1em;
+      width: 100%;
+    }
+    
+    select:focus, input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.1);
+    }
+    
+    .timer-display {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(138, 43, 226, 0.1);
+      color: var(--primary);
+      padding: 0.2rem 0.6rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: none;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    
+    .timer-display.warning {
+      background: rgba(255, 193, 7, 0.1);
+      color: var(--warning);
+    }
+    
+    .timer-display.danger {
+      background: rgba(239, 71, 111, 0.1);
+      color: var(--danger);
+      animation: pulse 0.5s infinite alternate;
+    }
+    
+    @keyframes pulse {
+      from { opacity: 1; }
+      to { opacity: 0.7; }
+    }
+    
+    .main-action {
+      border: none;
+      border-radius: 8px;
+      padding: 0.9rem 1.5rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #e0e0e0;
+      color: var(--primary);
+    }
+    
+    #btnSortear {
+      background: var(--primary);
+      color: white;
+    }
+    
+    #btnVocab {
+      background: var(--primary);
+      color: white;
+    }
+    
+    .main-action:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .secondary-buttons {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    
+    .secondary-button {
+      border: none;
+      border-radius: 6px;
+      padding: 0.5rem 0.8rem;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      background: rgba(138, 43, 226, 0.05);
+      color: var(--dark-light);
+      border: 1px solid rgba(138, 43, 226, 0.1);
+    }
+    
+    .secondary-button:hover:not(:disabled) {
+      background: rgba(138, 43, 226, 0.1);
+    }
+    
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none !important;
+      box-shadow: none;
+    }
+    
+    .difficulty {
+      display: inline-block;
+      padding: 0.2rem 0.7rem;
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+    
+    .A1 { background-color: var(--a1-color); }
+    .A2 { background-color: var(--a2-color); }
+    .B1 { background-color: var(--b1-color); }
+    .B2 { background-color: var(--b2-color); }
+    .C1 { background-color: var(--c1-color); }
+    .C2 { background-color: var(--c2-color); }
+    
+    .question-display {
+      background: white;
+      border-radius: 15px;
+      padding: 2.5rem 2rem;
+      margin: 1.5rem 0;
+      position: relative;
+      transition: var(--transition);
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .question-text {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: var(--dark);
+      font-weight: 500;
+      margin: 1rem 0;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .vocab-card {
+      display: none;
+      width: 100%;
+      text-align: center;
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .vocab-word {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      color: var(--primary);
+    }
+    
+    .vocab-translation {
+      font-size: 1.2rem;
+      color: var(--dark-light);
+      margin: 1rem 0;
+      display: none;
+    }
+    
+    .vocab-definition {
+      font-size: 1rem;
+      margin: 1rem 0;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    .vocab-example {
+      font-style: italic;
+      color: var(--dark-light);
+      margin-top: 1.5rem;
+      padding: 0.8rem;
+      background: rgba(138, 43, 226, 0.03);
+      border-radius: 8px;
+      border-left: 3px solid var(--primary);
+    }
+    
+    .vocab-highlight {
+      background-color: rgba(138, 43, 226, 0.15);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-weight: 600;
+      color: var(--primary);
+      border-bottom: 2px dotted var(--primary);
+    }
+    
+    .empty-message {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem;
+      color: var(--dark-light);
+      text-align: center;
+      width: 100%;
+    }
+    
+    .reset-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transition);
+      margin-top: 1rem;
+    }
+    
+    .reset-btn:hover {
+      background: var(--primary-dark);
+    }
+    
+    .time-up-notification {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      z-index: 1001;
+      text-align: center;
+      max-width: 80%;
+      display: none;
+      animation: fadeIn 0.5s forwards;
+    }
+    
+    .time-up-notification h3 {
+      color: var(--danger);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    
+    .time-up-notification p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .time-up-notification button {
+      background: var(--danger);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    
+    /* Estilos para o quiz de vocabulário */
+    .quiz-container {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+    }
+    
+    .quiz-word {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 1rem 0;
+      color: var(--primary);
+      word-break: break-word;
+    }
+    
+    .quiz-options {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .quiz-btn {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: rgba(138, 43, 226, 0.05);
+      transition: var(--transition);
+      font-size: 1rem;
+    }
+    
+    .quiz-btn:hover:not(:disabled) {
+      background: rgba(138, 43, 226, 0.1);
+    }
+    
+    .quiz-btn.correct { 
+      background: var(--success); 
+      color: white; 
+    }
+    
+    .quiz-btn.wrong { 
+      background: var(--danger); 
+      color: white; 
+    }
+    
+    .quiz-feedback {
+      font-weight: bold;
+      margin-top: 15px;
+      text-align: center;
+      min-height: 24px;
+    }
+    
+    #quizScore {
+      font-size: 1rem;
+      word-break: break-word;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      #quizScore {
+        font-size: 0.95rem;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, -40%); }
+      to { opacity: 1; transform: translate(-50%, -50%); }
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .container {
+        padding: 1.5rem;
+        border-radius: 15px;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .question-display, .vocab-card, .quiz-container {
+        padding: 1.5rem 1rem;
+      }
+      
+      .question-text {
+        font-size: 1.2rem;
+      }
+      
+      .vocab-word, .quiz-word {
+        font-size: 1.5rem;
+      }
+      
+      .controls {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .control-group {
+        width: 100%;
+      }
+      
+      .quiz-options {
+        gap: 8px;
+      }
+      
+      .quiz-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  
+  <div class="time-up-notification" id="timeUpNotification">
+    <h3>⏰ Time's Up!</h3>
+    <p>Your time to answer this question has ended.</p>
+    <button id="dismissNotification">Continue</button>
+  </div>
+  
+  <div class="container">
+    <h1>English Practice Tool</h1>
+    
+    <div class="mode-selector">
+      <button class="mode-btn active" id="btnModeQuestions">Questions</button>
+      <button class="mode-btn" id="btnModeVocabulary">Vocabulary</button>
+      <button class="mode-btn" id="btnModeQuiz">Quiz</button>
+      <button class="mode-btn" id="btnModeGrammar">Grammar</button>
+      <button class="mode-btn" id="btnModePhrasal">Phrasal Verbs</button>
+    </div>
+    
+    <div id="questionsControls">
+      <div class="controls">
+        <div class="control-group">
+          <label for="levelSelect">Level</label>
+          <select id="levelSelect">
+            <option value="all">All Levels</option>
+            <option value="A1">A1 (Beginner)</option>
+            <option value="A2">A2 (Elementary)</option>
+            <option value="B1">B1 (Intermediate)</option>
+            <option value="B2">B2 (Upper Intermediate)</option>
+            <option value="C1">C1 (Advanced)</option>
+            <option value="C2">C2 (Proficiency)</option>
+          </select>
+        </div>
+        
+        <div class="control-group">
+          <label for="timerToggle">Timer (seconds)</label>
+          <div class="timer-container">
+            <input type="number" id="timerToggle" min="0" max="300" step="10" placeholder="0 = off">
+            <div id="timerDisplay" class="timer-display">
+              <span id="timeRemaining">0</span>s
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button id="btnSortear" class="main-action" disabled>
+        <span>🎲</span> Draw Question
+      </button>
+      
+      <div class="secondary-buttons">
+        <button id="btnResetar" class="secondary-button" disabled>
+          <span>🔄</span> Reset
+        </button>
+        <button id="btnSave" class="secondary-button">
+          <span>💾</span> Save
+        </button>
+        <button id="btnSaved" class="secondary-button">
+          <span>📋</span> Saved
+        </button>
+      </div>
+      
+      <div class="question-display" id="questionDisplay">
+        <div id="resultado">
+          <div class="empty-message">
+            Select a level and draw a question to begin
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="vocabularyControls" style="display: none;">
+      <div class="controls">
+        <div class="control-group">
+          <label for="vocabLevelSelect">Level</label>
+          <select id="vocabLevelSelect">
+            <option value="all">All Levels</option>
+            <option value="A1">A1 (Beginner)</option>
+            <option value="A2">A2 (Elementary)</option>
+            <option value="B1">B1 (Intermediate)</option>
+            <option value="B2">B2 (Upper Intermediate)</option>
+            <option value="C1">C1 (Advanced)</option>
+            <option value="C2">C2 (Proficiency)</option>
+          </select>
+        </div>
+      </div>
+      
+      <button id="btnVocab" class="main-action" disabled>
+        <span>📖</span> Practice Vocabulary
+      </button>
+      
+      <div class="secondary-buttons">
+        <button id="btnVocabReset" class="secondary-button" disabled>
+          <span>🔄</span> Reset
+        </button>
+        <button id="btnShowTranslation" class="secondary-button">
+          <span>👀</span> Show Translation
+        </button>
+        <button id="btnSpeakVocab" class="secondary-button" style="margin-top:10px;">
+          🔊 Ouvir
+        </button>
+      </div>
+      
+      <div class="vocab-card" id="vocabCard">
+        <div class="difficulty vocab-level" id="vocabLevel"></div>
+        <div class="vocab-word" id="vocabWord"></div>
+        <div class="vocab-translation" id="vocabTranslation"></div>
+        <div class="vocab-definition" id="vocabDefinition"></div>
+        <div class="vocab-example" id="vocabExample"></div>
+      </div>
+    </div>
+    
+    <div id="quizControls" style="display: none;">
+      <div class="controls">
+        <div class="control-group">
+          <label for="quizLevelSelect">Level</label>
+          <select id="quizLevelSelect">
+            <option value="all">All Levels</option>
+            <option value="A1">A1 (Beginner)</option>
+            <option value="A2">A2 (Elementary)</option>
+            <option value="B1">B1 (Intermediate)</option>
+            <option value="B2">B2 (Upper Intermediate)</option>
+            <option value="C1">C1 (Advanced)</option>
+            <option value="C2">C2 (Proficiency)</option>
+          </select>
+        </div>
+        
+        <div class="control-group">
+          <label for="quizMode">Quiz Mode</label>
+          <select id="quizMode">
+            <option value="en-pt">English → Portuguese</option>
+            <option value="pt-en">Portuguese → English</option>
+            <option value="en-en">English → English</option>
+          </select>
+        </div>
+      </div>
+      
+      <button id="btnStartQuiz" class="main-action" disabled>
+        <span>🎯</span> Start Quiz
+      </button>
+      
+      <div class="secondary-buttons">
+        <button id="btnNextQuestion" class="secondary-button" disabled>
+          <span>➡️</span> Next Question
+        </button>
+        <button id="btnSpeakQuiz" class="secondary-button" style="margin-left: 8px;">
+          🔊 Ouvir
+        </button>
+      </div>
+      
+      <div id="quizScore" style="margin: 10px 0 10px 0; font-weight:bold; color:#8A2BE2;">
+        Points: <span id="quizPoints">0</span> | Errors: <span id="quizErrors">0</span> | Total: <span id="quizTotal">0</span>
+      </div>
+      <div class="quiz-container" id="quizContainer">
+        <div class="empty-message">
+          Select a level and start the quiz
+        </div>
+      </div>
+    </div>
+    
+    <div id="grammarControls" style="display: none;">
+      <div class="controls">
+        <div class="control-group">
+          <label for="grammarSelect">Grammar Topic</label>
+          <select id="grammarSelect"></select>
+        </div>
+      </div>
+      <button id="btnShowGrammar" class="main-action">
+        <span>📚</span> Show Grammar
+      </button>
+      <div class="question-display" id="grammarDisplay">
+        <div class="empty-message">
+          Select a topic and click to see explanation and examples.
+        </div>
+      </div>
+    </div>
+    
+    <div id="phrasalControls" style="display: none;">
+      <div class="controls">
+        <div class="control-group">
+          <label for="phrasalLevelSelect">Level</label>
+          <select id="phrasalLevelSelect">
+            <option value="all">All Levels</option>
+            <option value="A1">A1 (Beginner)</option>
+            <option value="A2">A2 (Elementary)</option>
+            <option value="B1">B1 (Intermediate)</option>
+            <option value="B2">B2 (Upper Intermediate)</option>
+            <option value="C1">C1 (Advanced)</option>
+            <option value="C2">C2 (Proficiency)</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="phrasalVerbSelect">Main Verb</label>
+          <select id="phrasalVerbSelect">
+            <option value="all">All Verbs</option>
+          </select>
+        </div>
+      </div>
+      <button id="btnDrawPhrasal" class="main-action" disabled>
+        <span>📖</span> Show Phrasal Verb
+      </button>
+      <div class="secondary-buttons">
+        <button id="btnPhrasalReset" class="secondary-button" disabled>
+          <span>🔄</span> Reset
+        </button>
+        <button id="btnShowPhrasalMeaning" class="secondary-button">
+          <span>👀</span> Show Meaning
+        </button>
+        <button id="btnSpeakPhrasal" class="secondary-button">
+          🔊 Listen
+        </button>
+      </div>
+      <div class="vocab-card" id="phrasalCard">
+        <div class="difficulty phrasal-level" id="phrasalLevel"></div>
+        <div class="vocab-word" id="phrasalVerb"></div>
+        <div class="vocab-translation" id="phrasalTranslation"></div>
+        <div class="vocab-definition" id="phrasalDefinition"></div>
+        <div class="vocab-example" id="phrasalExample"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // --- VARIÁVEIS GLOBAIS ---
+    let perguntasOriginais = [];
+    let perguntasAtivas = [];
+    let perguntasFiltradas = [];
+    let vocabularioOriginal = [];
+    let vocabularioAtivo = [];
+    let vocabularioFiltrado = [];
+    let vocabularioUsado = [];
+    let currentVocabIndex = 0;
+    let timerInterval = null;
+    let timerSeconds = 0;
+    let timerEnabled = false;
+    let currentQuestion = null;
+    let savedQuestions = JSON.parse(localStorage.getItem('savedQuestions')) || [];
+    let currentMode = 'questions';
+
+    // Quiz
+    let quizVocabulary = [];
+    let currentQuizQuestion = {};
+    let quizMode = "en-pt";
+    let quizVocabularyUsed = [];
+    let quizVocabularyActive = [];
+    let quizPoints = 0;
+    let quizErrors = 0;
+
+    // Grammar
+    const URL_PERGUNTAS = "english_questions_650.json";
+    const URL_VOCABULARIO = "english_vocabulary.json";
+    const URL_GRAMMAR = "english_grammar.json";
+    let grammarTopics = [];
+
+    // Phrasal Verbs
+    let phrasalVerbsOriginal = [];
+    let phrasalVerbsFiltrados = [];
+    let phrasalVerbsAtivos = [];
+    let phrasalVerbsUsados = [];
+    let currentPhrasalVerb = null;
+    const URL_PHRASALVERBS = "phrasal_verbs.json";
+
+    // --- FUNÇÕES DE CARREGAMENTO ---
+    async function carregarDados() {
+      try {
+        const responseQuestions = await fetch(URL_PERGUNTAS);
+        if (!responseQuestions.ok) throw new Error(`Failed to load questions from ${URL_PERGUNTAS}`);
+        perguntasOriginais = await responseQuestions.json();
+
+        const responseVocab = await fetch(URL_VOCABULARIO);
+        if (!responseVocab.ok) throw new Error(`Failed to load vocabulary from ${URL_VOCABULARIO}`);
+        vocabularioOriginal = await responseVocab.json();
+        quizVocabulary = [...vocabularioOriginal];
+
+        const responseGrammar = await fetch(URL_GRAMMAR);
+        if (!responseGrammar.ok) throw new Error(`Failed to load grammar from ${URL_GRAMMAR}`);
+        grammarTopics = await responseGrammar.json();
+
+        // Carrega Phrasal Verbs
+        const responsePhrasal = await fetch(URL_PHRASALVERBS);
+        if (!responsePhrasal.ok) throw new Error(`Failed to load phrasal verbs from ${URL_PHRASALVERBS}`);
+        phrasalVerbsOriginal = await responsePhrasal.json();
+        document.getElementById("btnDrawPhrasal").disabled = false;
+        document.getElementById("btnPhrasalReset").disabled = false;
+        filtrarPhrasalVerbs();
+        popularSelectDeVerbos();
+
+        popularGrammarSelect();
+
+        document.getElementById("btnSortear").disabled = false;
+        document.getElementById("btnResetar").disabled = false;
+        document.getElementById("btnSave").disabled = false;
+        document.getElementById("btnSaved").disabled = false;
+        document.getElementById("btnVocab").disabled = false;
+        document.getElementById("btnVocabReset").disabled = false;
+        document.getElementById("btnStartQuiz").disabled = false;
+
+        filtrarPerguntas();
+        filtrarVocabulario();
+        filtrarQuizVocabulario();
+        filtrarPhrasalVerbs();
+      } catch (error) {
+        alert("Erro ao carregar dados: " + error.message);
+      }
+    }
+
+    // --- FILTROS ---
+    function filtrarPerguntas() {
+      const nivelAtual = document.getElementById("levelSelect").value;
+      if (nivelAtual === "all") {
+        perguntasFiltradas = [...perguntasOriginais];
+      } else {
+        perguntasFiltradas = perguntasOriginais.filter(p => (p.level || "").toUpperCase() === nivelAtual.toUpperCase());
+      }
+      perguntasAtivas = [...perguntasFiltradas];
+      document.getElementById("resultado").innerHTML = `
+        <div class="empty-message">
+          Ready with ${perguntasFiltradas.length} questions<br>
+          <small>Click "Draw Question" to begin</small>
+        </div>
+      `;
+    }
+
+    function filtrarVocabulario() {
+      const nivelAtual = document.getElementById("vocabLevelSelect").value;
+      if (nivelAtual === "all") {
+        vocabularioFiltrado = [...vocabularioOriginal];
+      } else {
+        vocabularioFiltrado = vocabularioOriginal.filter(v => (v.level || "").toUpperCase() === nivelAtual.toUpperCase());
+      }
+      vocabularioAtivo = [...vocabularioFiltrado];
+      vocabularioUsado = [];
+      currentVocabIndex = 0;
+      document.getElementById("vocabCard").style.display = "none";
+      const emptyMsg = document.querySelector('#vocabularyControls .empty-message');
+      if (emptyMsg) emptyMsg.remove();
+    }
+
+    function filtrarQuizVocabulario() {
+      const nivelAtual = document.getElementById("quizLevelSelect").value;
+      if (nivelAtual === "all") {
+        quizVocabulary = [...vocabularioOriginal];
+      } else {
+        quizVocabulary = vocabularioOriginal.filter(v => (v.level || "").toUpperCase() === nivelAtual.toUpperCase());
+      }
+    }
+
+    function filtrarPhrasalVerbs() {
+  const nivel = document.getElementById("phrasalLevelSelect").value;
+  const verbo = document.getElementById("phrasalVerbSelect").value;
+  
+  let listaFiltrada = [...phrasalVerbsOriginal];
+  
+  // Aplicar filtro de nível - MUDEI AQUI
+  if (nivel !== "all") {
+    listaFiltrada = listaFiltrada.filter(pv => pv.level === nivel);
+  }
+  
+  // Aplicar filtro de verbo principal
+  if (verbo !== "all") {
+    listaFiltrada = listaFiltrada.filter(pv => pv.verb === verbo);
+  }
+  
+  phrasalVerbsFiltrados = listaFiltrada;
+  phrasalVerbsAtivos = [...phrasalVerbsFiltrados];
+  phrasalVerbsUsados = [];
+  
+  // Atualizar o botão baseado na disponibilidade
+  document.getElementById("btnDrawPhrasal").disabled = phrasalVerbsFiltrados.length === 0;
+  
+  // Limpar display se não houver resultados
+  if (phrasalVerbsFiltrados.length === 0) {
+    document.getElementById("phrasalCard").style.display = "none";
+    const emptyMsg = document.querySelector('#phrasalControls .empty-message');
+    if (!emptyMsg) {
+      document.getElementById("phrasalControls").insertAdjacentHTML('beforeend', 
+        '<div class="empty-message">No phrasal verbs found for the selected filters.</div>');
+    }
+  } else {
+    const emptyMsg = document.querySelector('#phrasalControls .empty-message');
+    if (emptyMsg) emptyMsg.remove();
+  }
+}
+
+    // --- QUESTIONS ---
+    function sortearPergunta() {
+      const resultadoEl = document.getElementById("resultado");
+      if (perguntasAtivas.length === 0) {
+        resultadoEl.innerHTML = `
+          <div class="empty-message">
+            🎉 All questions for this level have been used!
+            <button class="reset-btn" onclick="resetarPerguntas()">Reset Questions</button>
+          </div>
+        `;
+        return;
+      }
+      const idx = Math.floor(Math.random() * perguntasAtivas.length);
+      currentQuestion = perguntasAtivas[idx];
+      perguntasAtivas.splice(idx, 1);
+
+      resultadoEl.innerHTML = `
+        <div style="width: 100%; text-align: center;">
+          <span class="difficulty ${currentQuestion.level}">${currentQuestion.level}</span>
+          <div class="question-text" id="questionText">${currentQuestion.question}</div>
+          <button id="btnSpeakQuestion" class="secondary-button" style="margin-top:10px;">
+            🔊 Ouvir Pergunta
+          </button>
+        </div>
+      `;
+      document.getElementById("btnSpeakQuestion").onclick = () => {
+        speakText(currentQuestion.question, 'en-US');
+      };
+      startTimer();
+    }
+
+    function resetarPerguntas() {
+      const nivelAtual = document.getElementById("levelSelect").value;
+      if (nivelAtual === "all") {
+        perguntasAtivas = [...perguntasOriginais];
+      } else {
+        perguntasAtivas = perguntasOriginais.filter(p => (p.level || "").toUpperCase() === nivelAtual.toUpperCase());
+      }
+      document.getElementById("resultado").innerHTML = `
+        <div class="empty-message">
+          🔄 List reset with ${perguntasAtivas.length} questions
+        </div>
+      `;
+      resetTimer();
+    }
+
+    // --- VOCABULARY ---
+    function mostrarVocabulario() {
+      const existingEmptyMessage = document.querySelector('#vocabularyControls .empty-message');
+      if (existingEmptyMessage) existingEmptyMessage.remove();
+
+      if (vocabularioAtivo.length === 0) {
+        if (vocabularioUsado.length > 0) {
+          document.getElementById("vocabCard").style.display = "none";
+          document.getElementById("vocabularyControls").insertAdjacentHTML('beforeend', 
+            '<div class="empty-message">🎉 All vocabulary for this level has been practiced!<br><small>Click "Reset" to start again</small></div>');
+        } else {
+          document.getElementById("vocabCard").style.display = "none";
+          document.getElementById("vocabularyControls").insertAdjacentHTML('beforeend', 
+            '<div class="empty-message">No vocabulary found for this level</div>');
+        }
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * vocabularioAtivo.length);
+      const currentVocab = vocabularioAtivo[randomIndex];
+      vocabularioAtivo.splice(randomIndex, 1);
+      vocabularioUsado.push(currentVocab);
+
+      let exampleWithHighlight = currentVocab.example;
+      if (currentVocab.word && currentVocab.example) {
+        const regex = new RegExp(`\\b${currentVocab.word}\\b`, 'gi');
+        exampleWithHighlight = currentVocab.example.replace(regex, 
+          `<span class="vocab-highlight">$&</span>`);
+      }
+
+      document.getElementById("vocabLevel").className = `difficulty ${currentVocab.level}`;
+      document.getElementById("vocabLevel").textContent = currentVocab.level;
+      document.getElementById("vocabWord").textContent = currentVocab.word;
+      document.getElementById("vocabTranslation").textContent = currentVocab.translation;
+      document.getElementById("vocabDefinition").innerHTML = `
+        <strong>English:</strong> ${currentVocab.definition_en}<br>
+        <strong>Português:</strong> ${currentVocab.definition_pt}
+      `;
+      document.getElementById("vocabExample").innerHTML = `Example: ${exampleWithHighlight}`;
+      document.getElementById("vocabTranslation").style.display = "none";
+      document.getElementById("vocabCard").style.display = "block";
+    }
+
+    function resetarVocabulario() {
+      vocabularioAtivo = [...vocabularioFiltrado, ...vocabularioUsado];
+      vocabularioUsado = [];
+      const emptyMessage = document.querySelector('#vocabularyControls .empty-message');
+      if (emptyMessage) emptyMessage.remove();
+      document.getElementById("vocabCard").style.display = "none";
+    }
+
+    function toggleTranslation() {
+      const translation = document.getElementById("vocabTranslation");
+      translation.style.display = translation.style.display === "none" ? "block" : "none";
+    }
+
+    // --- QUIZ ---
+    function startQuiz() {
+      quizPoints = 0;
+      quizErrors = 0;
+      document.getElementById("quizPoints").textContent = quizPoints;
+      document.getElementById("quizErrors").textContent = quizErrors;
+      document.getElementById("quizTotal").textContent = quizPoints + quizErrors;
+      if (quizVocabulary.length === 0) {
+        document.getElementById("quizContainer").innerHTML = `
+          <div class="empty-message">
+            No vocabulary available for this level
+          </div>
+        `;
+        return;
+      }
+      quizVocabularyUsed = [];
+      quizVocabularyActive = [...quizVocabulary];
+      document.getElementById("btnNextQuestion").disabled = false;
+      newQuizQuestion();
+    }
+
+    function newQuizQuestion() {
+      quizMode = document.getElementById("quizMode").value;
+      if (!quizVocabularyActive || quizVocabularyActive.length === 0) {
+        document.getElementById("quizContainer").innerHTML = `
+          <div class="empty-message">
+            🎉 All quiz questions for this level have been used!
+            <button class="reset-btn" onclick="resetQuizQuestions()">Reset Quiz</button>
+          </div>
+        `;
+        document.getElementById("btnNextQuestion").disabled = true;
+        return;
+      }
+      document.getElementById("quizContainer").querySelectorAll(".empty-message").forEach(el => el.remove());
+      const idx = Math.floor(Math.random() * quizVocabularyActive.length);
+      const wordObj = quizVocabularyActive[idx];
+      quizVocabularyActive.splice(idx, 1);
+      quizVocabularyUsed.push(wordObj);
+      currentQuizQuestion = wordObj;
+
+      let correctAnswer, wrongOptions, questionText, options;
+      if (quizMode === "en-pt") {
+        questionText = wordObj.word;
+        correctAnswer = wordObj.translation;
+        wrongOptions = quizVocabulary.filter(v => v.word !== wordObj.word);
+        wrongOptions = shuffle(wrongOptions).slice(0, 2).map(v => v.translation);
+        options = shuffle([correctAnswer, ...wrongOptions]);
+      } else if (quizMode === "pt-en") {
+        questionText = wordObj.translation;
+        correctAnswer = wordObj.word;
+        wrongOptions = quizVocabulary.filter(v => v.translation !== wordObj.translation);
+        wrongOptions = shuffle(wrongOptions).slice(0, 2).map(v => v.word);
+        options = shuffle([correctAnswer, ...wrongOptions]);
+      } else if (quizMode === "en-en") {
+        questionText = wordObj.word;
+        correctAnswer = wordObj.definition_en;
+        wrongOptions = quizVocabulary.filter(v => v.word !== wordObj.word);
+        wrongOptions = shuffle(wrongOptions).slice(0, 2).map(v => v.definition_en);
+        options = shuffle([correctAnswer, ...wrongOptions]);
+      }
+      currentQuizQuestion.correct = correctAnswer;
+
+      const quizHTML = `
+        <span class="difficulty ${wordObj.level}">${wordObj.level}</span>
+        <div class="quiz-word" id="quizWord">${questionText}</div>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+      `;
+      document.getElementById("quizContainer").innerHTML = quizHTML;
+
+      const optionsDiv = document.getElementById("quizOptions");
+      options.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "quiz-btn";
+        btn.textContent = opt;
+        btn.onclick = () => checkQuizAnswer(opt, btn);
+        optionsDiv.appendChild(btn);
+      });
+      document.getElementById("quizFeedback").textContent = "";
+
+      document.getElementById("btnSpeakQuiz").onclick = () => {
+        speakText(document.getElementById("quizWord").textContent, 'en-US');
+      };
+    }
+
+    function checkQuizAnswer(answer, btn) {
+      if (answer === currentQuizQuestion.correct) {
+        btn.classList.add("correct");
+        document.getElementById("quizFeedback").textContent = "✅ Correct!";
+        quizPoints++;
+      } else {
+        btn.classList.add("wrong");
+        document.getElementById("quizFeedback").textContent = 
+          `❌ Incorrect! Correct answer: ${currentQuizQuestion.correct}`;
+        quizErrors++;
+      }
+      document.getElementById("quizPoints").textContent = quizPoints;
+      document.getElementById("quizErrors").textContent = quizErrors;
+      document.getElementById("quizTotal").textContent = quizPoints + quizErrors;
+      document.querySelectorAll("#quizOptions .quiz-btn").forEach(b => {
+        b.disabled = true;
+        if (b.textContent === currentQuizQuestion.correct && b !== btn) {
+          b.classList.add("correct");
+        }
+      });
+    }
+
+    function nextQuizQuestion() {
+      newQuizQuestion();
+    }
+
+    function resetQuizQuestions() {
+      quizVocabularyActive = [...quizVocabulary, ...quizVocabularyUsed];
+      quizVocabularyUsed = [];
+      document.getElementById("btnNextQuestion").disabled = false;
+      newQuizQuestion();
+    }
+
+    // --- GRAMMAR ---
+    function mostrarGramatica() {
+      const select = document.getElementById("grammarSelect");
+      const display = document.getElementById("grammarDisplay");
+      const topic = grammarTopics.find(g => g.topic === select.value);
+      if (!topic) {
+        display.innerHTML = `<div class="empty-message">No explanation found for this topic.</div>`;
+        return;
+      }
+      display.innerHTML = `
+        <div>
+          <h3>${topic.topic}</h3>
+          <div><strong>Explanation:</strong> ${topic.explanation}</div>
+          <div style="margin-top:1em;"><strong>Examples:</strong>
+            <ul>
+              ${topic.examples.map(ex => `<li>${ex}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      `;
+    }
+
+    function popularGrammarSelect() {
+      const select = document.getElementById("grammarSelect");
+      select.innerHTML = "";
+      grammarTopics.forEach(topic => {
+        const option = document.createElement("option");
+        option.value = topic.topic;
+        option.textContent = topic.topic;
+        select.appendChild(option);
+      });
+    }
+
+      function popularSelectDeVerbos() {
+    const nivel = document.getElementById("phrasalLevelSelect").value;
+    const select = document.getElementById("phrasalVerbSelect");
+    
+    // Filtrar verbos baseado no nível selecionado
+    let verbosFiltrados = [...phrasalVerbsOriginal];
+    if (nivel !== "all") {
+      verbosFiltrados = verbosFiltrados.filter(pv => pv.level === nivel);
+    }
+    
+    const verbosUnicos = [...new Set(verbosFiltrados.map(pv => pv.verb))].sort();
+    
+    select.innerHTML = '<option value="all">All Verbs</option>';
+    verbosUnicos.forEach(verbo => {
+      const option = document.createElement("option");
+      option.value = verbo;
+      option.textContent = verbo;
+      select.appendChild(option);
+    });
+  }
+
+    // --- UTILITÁRIOS ---
+    function speakText(text, lang = 'en-US') {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("Speech Synthesis not supported in this browser.");
+      }
+    }
+
+    function shuffle(array) {
+      return array.sort(() => Math.random() - 0.5);
+    }
+
+    // --- TIMER ---
+    function startTimer() {
+      resetTimer();
+      const timerInput = document.getElementById("timerToggle");
+      timerSeconds = parseInt(timerInput.value) || 0;
+      const timerDisplay = document.getElementById("timerDisplay");
+      const timeRemaining = document.getElementById("timeRemaining");
+      if (timerSeconds > 0) {
+        timerEnabled = true;
+        timerDisplay.style.display = "flex";
+        timeRemaining.textContent = timerSeconds;
+        updateTimerColor(timerSeconds);
+        timerInterval = setInterval(() => {
+          timerSeconds--;
+          timeRemaining.textContent = timerSeconds;
+          updateTimerColor(timerSeconds);
+          if (timerSeconds <= 0) {
+            clearInterval(timerInterval);
+            timerEnabled = false;
+            showTimeUpNotification();
+            timerDisplay.style.display = "none";
+          }
+        }, 1000);
+      } else {
+        timerDisplay.style.display = "none";
+      }
+    }
+
+    function updateTimerColor(seconds) {
+      const timerDisplay = document.getElementById("timerDisplay");
+      timerDisplay.classList.remove("warning", "danger");
+      if (seconds <= 10) {
+        timerDisplay.classList.add("danger");
+      } else if (seconds <= 20) {
+        timerDisplay.classList.add("warning");
+      }
+    }
+
+    function resetTimer() {
+      if (timerInterval) {
+        clearInterval(timerInterval);
+      }
+      timerEnabled = false;
+      document.getElementById("timerDisplay").style.display = "none";
+    }
+
+    function showTimeUpNotification() {
+      const notification = document.getElementById("timeUpNotification");
+      notification.style.display = 'block';
+    }
+
+    // --- EVENTOS ---
+    document.addEventListener('DOMContentLoaded', () => {
+      // Troca de modos
+      document.getElementById('btnModeQuestions').onclick = () => switchMode('questions');
+      document.getElementById('btnModeVocabulary').onclick = () => switchMode('vocabulary');
+      document.getElementById('btnModeQuiz').onclick = () => switchMode('quiz');
+      document.getElementById('btnModeGrammar').onclick = () => switchMode('grammar');
+      document.getElementById('btnModePhrasal').onclick = () => switchMode('phrasal');
+
+      // Questions
+      document.getElementById("levelSelect").addEventListener("change", filtrarPerguntas);
+      document.getElementById("btnSortear").addEventListener("click", sortearPergunta);
+      document.getElementById("btnResetar").addEventListener("click", resetarPerguntas);
+      document.getElementById("btnSave").addEventListener("click", saveQuestion);
+
+      // Vocabulary
+      document.getElementById("vocabLevelSelect").addEventListener("change", filtrarVocabulario);
+      document.getElementById("btnVocab").addEventListener("click", mostrarVocabulario);
+      document.getElementById("btnVocabReset").addEventListener("click", resetarVocabulario);
+      document.getElementById("btnShowTranslation").addEventListener("click", toggleTranslation);
+      document.getElementById("btnSpeakVocab").addEventListener("click", () => {
+        const word = document.getElementById("vocabWord").textContent;
+        speakText(word, 'en-US');
+      });
+
+      // Quiz
+      document.getElementById("quizLevelSelect").addEventListener("change", filtrarQuizVocabulario);
+      document.getElementById("quizMode").addEventListener("change", () => {
+        if (currentMode === 'quiz') newQuizQuestion();
+      });
+      document.getElementById("btnStartQuiz").addEventListener("click", startQuiz);
+      document.getElementById("btnNextQuestion").addEventListener("click", nextQuizQuestion);
+
+      // Timer
+      document.getElementById("timerToggle").addEventListener("change", resetTimer);
+
+      // Grammar
+      document.getElementById("btnShowGrammar").addEventListener("click", mostrarGramatica);
+      document.getElementById("grammarSelect").addEventListener("change", mostrarGramatica);
+
+      // Notificação de tempo
+      document.getElementById("dismissNotification").addEventListener("click", () => {
+        document.getElementById("timeUpNotification").style.display = "none";
+      });
+      
+
+      // Phrasal Verbs
+      // Event listener específico para o select de nível dos phrasal verbs
+document.getElementById("phrasalLevelSelect").addEventListener("change", function() {
+  // Primeiro filtra os phrasal verbs pelo nível
+  filtrarPhrasalVerbs();
+  // Depois atualiza a lista de verbos principais baseado no nível selecionado
+  popularSelectDeVerbos();
+});
+      document.getElementById('btnModePhrasal').addEventListener('click', () => switchMode('phrasal'));
+      document.getElementById("phrasalLevelSelect").addEventListener("change", filtrarPhrasalVerbs);
+      document.getElementById("phrasalVerbSelect").addEventListener("change", filtrarPhrasalVerbs);
+      document.getElementById("btnDrawPhrasal").addEventListener("click", sortearPhrasalVerb);
+      document.getElementById("btnPhrasalReset").addEventListener("click", resetarPhrasalVerbs);
+      document.getElementById("btnShowPhrasalMeaning").addEventListener("click", togglePhrasalMeaning);
+      document.getElementById("btnSpeakPhrasal").addEventListener("click", () => {
+        if (currentPhrasalVerb) {
+          speakText(currentPhrasalVerb.phrasal_verb, 'en-US');
+        }
+      });
+
+      // Inicializa
+      carregarDados();
+      switchMode('questions');
+    });
+
+    function switchMode(mode) {
+      currentMode = mode;
+      document.getElementById('questionsControls').style.display = 'none';
+      document.getElementById('vocabularyControls').style.display = 'none';
+      document.getElementById('quizControls').style.display = 'none';
+      document.getElementById('grammarControls').style.display = 'none';
+      document.getElementById('phrasalControls').style.display = 'none';
+
+      document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+
+      if (mode === 'questions') {
+        document.getElementById('questionsControls').style.display = 'block';
+        document.getElementById('btnModeQuestions').classList.add('active');
+      } else if (mode === 'vocabulary') {
+        document.getElementById('vocabularyControls').style.display = 'block';
+        document.getElementById('btnModeVocabulary').classList.add('active');
+      } else if (mode === 'quiz') {
+        document.getElementById('quizControls').style.display = 'block';
+        document.getElementById('btnModeQuiz').classList.add('active');
+        filtrarQuizVocabulario();
+      } else if (mode === 'grammar') {
+        document.getElementById('grammarControls').style.display = 'block';
+        document.getElementById('btnModeGrammar').classList.add('active');
+      } else if (mode === 'phrasal') {
+        document.getElementById('phrasalControls').style.display = 'block';
+        document.getElementById('btnModePhrasal').classList.add('active');
+        filtrarPhrasalVerbs();
+      }
+    }
+
+    function saveQuestion() {
+      if (!currentQuestion) {
+        alert("No question to save!");
+        return;
+      }
+      // Evita duplicatas
+      if (savedQuestions.some(q => q.question === currentQuestion.question)) {
+        alert("This question is already saved!");
+        return;
+      }
+      savedQuestions.push(currentQuestion);
+      localStorage.setItem('savedQuestions', JSON.stringify(savedQuestions));
+      alert("Question saved!");
+    }
+
+        function sortearPhrasalVerb() {
+      const container = document.getElementById("phrasalControls");
+      const existingEmptyMessage = document.querySelector('#phrasalControls .empty-message');
+      
+      if (existingEmptyMessage) existingEmptyMessage.remove();
+      
+      if (phrasalVerbsAtivos.length === 0) {
+        if (phrasalVerbsUsados.length > 0) {
+          container.insertAdjacentHTML('beforeend', 
+            '<div class="empty-message">🎉 All phrasal verbs for this filter have been practiced!<br><button class="reset-btn" onclick="resetarPhrasalVerbs()">Reset</button></div>');
+        } else {
+          container.insertAdjacentHTML('beforeend', 
+            '<div class="empty-message">No phrasal verbs found for the current filters.</div>');
+        }
+        document.getElementById("btnDrawPhrasal").disabled = true;
+        return;
+      }
+       const randomIndex = Math.floor(Math.random() * phrasalVerbsAtivos.length);
+      currentPhrasalVerb = phrasalVerbsAtivos[randomIndex];
+      phrasalVerbsAtivos.splice(randomIndex, 1);
+      phrasalVerbsUsados.push(currentPhrasalVerb);
+      document.getElementById("phrasalLevel").className = `difficulty ${currentPhrasalVerb.level}`;
+      document.getElementById("phrasalLevel").textContent = currentPhrasalVerb.level;
+      document.getElementById("phrasalVerb").textContent = currentPhrasalVerb.phrasal_verb;
+      document.getElementById("phrasalTranslation").textContent = currentPhrasalVerb.translation;
+      document.getElementById("phrasalDefinition").innerHTML = `
+        <strong>English:</strong> ${currentPhrasalVerb.definition_en}<br>
+        <strong>Português:</strong> ${currentPhrasalVerb.definition_pt}
+      `;
+      let exemploDestacado = currentPhrasalVerb.example;
+      if (currentPhrasalVerb.phrasal_verb && currentPhrasalVerb.example) {
+        const regex = new RegExp(`\\b${currentPhrasalVerb.phrasal_verb}\\b`, 'gi');
+        exemploDestacado = currentPhrasalVerb.example.replace(regex, `<span class="vocab-highlight">$&</span>`);
+      }
+      document.getElementById("phrasalExample").innerHTML = `Example: ${exemploDestacado}`;
+      document.getElementById("phrasalTranslation").style.display = "none";
+      document.getElementById("phrasalCard").style.display = "block";
+    }
+    
+    function resetarPhrasalVerbs() {
+      phrasalVerbsAtivos = [...phrasalVerbsFiltrados, ...phrasalVerbsUsados];
+      phrasalVerbsUsados = [];
+      const emptyMessage = document.querySelector('#phrasalControls .empty-message');
+      if (emptyMessage) emptyMessage.remove();
+      document.getElementById("phrasalCard").style.display = "none";
+    }
+
+    function togglePhrasalMeaning() {
+      const translation = document.getElementById("phrasalTranslation");
+      translation.style.display = translation.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
