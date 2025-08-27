@@ -564,6 +564,166 @@
         font-size: 0.9rem;
       }
     }
+    /* AJUSTES DE RESPONSIVIDADE - Adicione isso no final do seu CSS */
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
+  
+  .container {
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mode-selector {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  
+  .mode-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .controls {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .control-group {
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .question-display, .vocab-card, .quiz-container {
+    padding: 1.2rem 1rem;
+    margin: 1rem 0;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  .vocab-word, .quiz-word {
+    font-size: 1.4rem;
+    word-break: break-word;
+  }
+  
+  .vocab-definition, .vocab-example {
+    font-size: 0.9rem;
+  }
+  
+  .main-action {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .secondary-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .secondary-button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Ajustes para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  body {
+    padding: 0.3rem;
+    justify-content: flex-start;
+  }
+  
+  .container {
+    padding: 0.8rem;
+    border-radius: 12px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .mode-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+  }
+  
+  select, input {
+    padding: 0.5rem 1rem 0.5rem 0.7rem;
+    font-size: 0.85rem;
+  }
+  
+  .question-text {
+    font-size: 1rem;
+  }
+  
+  .vocab-word, .quiz-word {
+    font-size: 1.2rem;
+  }
+}
+
+/* Garantir que textos longos quebrem corretamente */
+.question-text, .vocab-definition, .vocab-example, 
+.quiz-word, .vocab-word {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Melhorar a rolagem em dispositivos móveis */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ajustar tamanho de fonte base para mobile */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+/* Ajustes específicos para o card de vocabulário */
+.vocab-card {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.vocab-definition {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.vocab-example {
+  font-size: 0.95em;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Garantir que botões não quebrem o layout */
+.secondary-buttons {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.secondary-button {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
   </style>
 </head>
 <body>
