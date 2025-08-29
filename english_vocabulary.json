@@ -417,6 +417,878 @@
   },
   {
     "level": "A2",
+    "word": "to move",
+    "translation": "mover",
+    "definition_en": "To change one's place of residence or position.",
+    "definition_pt": "Mudar a residência ou posição de alguém.",
+    "example": "They want to move to a bigger house."
+  },
+  {
+    "level": "A2",
+    "word": "to share",
+    "translation": "dividir, compartilhar",
+    "definition_en": "To have or use something with others.",
+    "definition_pt": "Ter ou usar algo com outras pessoas.",
+    "example": "I always share my food with my sister."
+  },
+  {
+    "level": "A2",
+    "word": "to be",
+    "translation": "ser, estar",
+    "definition_en": "To exist; to occupy a position or place.",
+    "definition_pt": "Existir; ocupar uma posição ou lugar.",
+    "example": "I am happy today."
+  },
+  {
+    "level": "A2",
+    "word": "bored",
+    "translation": "entediado",
+    "definition_en": "Feeling weary because one is unoccupied or lacks interest in one's current activity.",
+    "definition_pt": "Sentir-se cansado porque está desocupado ou falta interesse na atividade atual.",
+    "example": "The students were bored during the long lecture."
+  },
+  {
+    "level": "A2",
+    "word": "excited",
+    "translation": "animado",
+    "definition_en": "Very enthusiastic and eager.",
+    "definition_pt": "Muito entusiasmado e ansioso.",
+    "example": "The children were excited about the trip to the zoo."
+  },
+  {
+    "level": "A2",
+    "word": "disappointed",
+    "translation": "desapontado, decepcionado",
+    "definition_en": "Sad or displeased because someone or something has failed to fulfill one's hopes or expectations.",
+    "definition_pt": "Triste ou descontente porque alguém ou algo não correspondeu às expectativas.",
+    "example": "She was disappointed with her test results."
+  },
+  {
+    "level": "A2",
+    "word": "awkward",
+    "translation": "constrangedor",
+    "definition_en": "Causing difficulty; hard to do or deal with.",
+    "definition_pt": "Causando dificuldade; difícil de fazer ou lidar.",
+    "example": "There was an awkward silence after he told the joke."
+  },
+  {
+    "level": "A2",
+    "word": "careful",
+    "translation": "cuidadoso",
+    "definition_en": "Making sure of avoiding potential danger, mishap, or harm; cautious.",
+    "definition_pt": "Certificar-se de evitar perigo potencial, acidente ou dano; cauteloso.",
+    "example": "Be careful when you cross the street."
+  },
+  {
+    "level": "A2",
+    "word": "amazing",
+    "translation": "ótimo, excelente",
+    "definition_en": "Very impressive; extraordinary.",
+    "definition_pt": "Muito impressionante; extraordinário.",
+    "example": "The view from the mountain was amazing."
+  },
+  {
+    "level": "A2",
+    "word": "embarrassed",
+    "translation": "envergonhado",
+    "definition_en": "Feeling or showing embarrassment.",
+    "definition_pt": "Sentindo ou mostrando vergonha.",
+    "example": "He was embarrassed when he forgot his lines in the play."
+  },
+  {
+    "level": "A2",
+    "word": "frustrated",
+    "translation": "frustrado",
+    "definition_en": "Feeling or expressing distress and annoyance, especially because of inability to change or achieve something.",
+    "definition_pt": "Sentindo ou expressando angústia e aborrecimento, especialmente por incapacidade de mudar ou alcançar algo.",
+    "example": "She felt frustrated after trying to solve the problem for hours."
+  },
+  {
+    "level": "A2",
+    "word": "summer",
+    "translation": "verão",
+    "definition_en": "The warmest season of the year.",
+    "definition_pt": "A estação mais quente do ano.",
+    "example": "We always go to the beach in summer."
+  },
+  {
+    "level": "A2",
+    "word": "fall",
+    "translation": "outono",
+    "definition_en": "The season after summer and before winter.",
+    "definition_pt": "A estação após o verão e antes do inverno.",
+    "example": "The leaves change color in the fall."
+  },
+  {
+    "level": "A2",
+    "word": "winter",
+    "translation": "inverno",
+    "definition_en": "The coldest season of the year.",
+    "definition_pt": "A estação mais fria do ano.",
+    "example": "It snows a lot here in winter."
+  },
+  {
+    "level": "A2",
+    "word": "yesterday",
+    "translation": "ontem",
+    "definition_en": "On the day before today.",
+    "definition_pt": "No dia antes de hoje.",
+    "example": "I saw her yesterday at the supermarket."
+  },
+  {
+    "level": "A2",
+    "word": "last",
+    "translation": "último, passado",
+    "definition_en": "Most recent in time; latest.",
+    "definition_pt": "Mais recente no tempo; último.",
+    "example": "What did you do last weekend?"
+  },
+  {
+    "level": "A2",
+    "word": "ago",
+    "translation": "atrás",
+    "definition_en": "Before the present; earlier.",
+    "definition_pt": "Antes do presente; mais cedo.",
+    "example": "He left five minutes ago."
+  },
+  {
+    "level": "A2",
+    "word": "sunny",
+    "translation": "ensolarado",
+    "definition_en": "Bright with sunlight.",
+    "definition_pt": "Brilhante com luz solar.",
+    "example": "It's a sunny day, perfect for a picnic."
+  },
+  {
+    "level": "A2",
+    "word": "snowy",
+    "translation": "nevoso",
+    "definition_en": "Covered with snow; characterized by snow.",
+    "definition_pt": "Coberto de neve; caracterizado por neve.",
+    "example": "We had a snowy winter this year."
+  },
+  {
+    "level": "A2",
+    "word": "rainy",
+    "translation": "chuvoso",
+    "definition_en": "Having a lot of rain.",
+    "definition_pt": "Com muita chuva.",
+    "example": "Bring an umbrella, it's a rainy day."
+  },
+  {
+    "level": "A2",
+    "word": "cloudy",
+    "translation": "nebuloso",
+    "definition_en": "Covered with or characterized by clouds; overcast.",
+    "definition_pt": "Coberto com ou caracterizado por nuvens; nublado.",
+    "example": "The sky is cloudy today."
+  },
+  {
+    "level": "A2",
+    "word": "windy",
+    "translation": "ventoso",
+    "definition_en": "Marked by strong wind.",
+    "definition_pt": "Marcado por vento forte.",
+    "example": "It's too windy to fly a kite today."
+  },
+  {
+    "level": "A2",
+    "word": "fascinating",
+    "translation": "fascinante",
+    "definition_en": "Extremely interesting.",
+    "definition_pt": "Extremamente interessante.",
+    "example": "The history of ancient Egypt is fascinating."
+  },
+  {
+    "level": "A2",
+    "word": "incredible",
+    "translation": "incrível",
+    "definition_en": "Impossible to believe; extraordinary.",
+    "definition_pt": "Impossível de acreditar; extraordinário.",
+    "example": "The magician performed an incredible trick."
+  },
+  {
+    "level": "A2",
+    "word": "scared",
+    "translation": "assustado",
+    "definition_en": "Fearful; frightened.",
+    "definition_pt": "Temeroso; assustado.",
+    "example": "The little girl was scared of the dark."
+  },
+  {
+    "level": "A2",
+    "word": "polite",
+    "translation": "educado, respeitoso",
+    "definition_en": "Having or showing behavior that is respectful and considerate of other people.",
+    "definition_pt": "Ter ou mostrar comportamento que é respeitoso e considerado com outras pessoas.",
+    "example": "He's always very polite to everyone."
+  },
+  {
+    "level": "A2",
+    "word": "rude",
+    "translation": "grosseiro",
+    "definition_en": "Offensively impolite or ill-mannered.",
+    "definition_pt": "Ofensivamente indelicado ou mal-educado.",
+    "example": "It's rude to interrupt people when they're speaking."
+  },
+  {
+    "level": "A2",
+    "word": "reliable",
+    "translation": "confiável",
+    "definition_en": "Consistently good in quality or performance; able to be trusted.",
+    "definition_pt": "Consistentemente bom em qualidade ou desempenho; capaz de ser confiável.",
+    "example": "She's a reliable employee who always meets deadlines."
+  },
+  {
+    "level": "A2",
+    "word": "unreliable",
+    "translation": "não confiável, duvidoso",
+    "definition_en": "Not able to be relied upon.",
+    "definition_pt": "Não é capaz de ser confiável.",
+    "example": "The bus service is unreliable in this area."
+  },
+  {
+    "level": "A2",
+    "word": "widower",
+    "translation": "viúvo",
+    "definition_en": "A man whose spouse has died and who has not remarried.",
+    "definition_pt": "Um homem cujo cônjuge morreu e que não se casou novamente.",
+    "example": "He became a widower last year."
+  },
+  {
+    "level": "A2",
+    "word": "widow",
+    "translation": "viúva",
+    "definition_en": "A woman whose spouse has died and who has not remarried.",
+    "definition_pt": "Uma mulher cujo cônjuge morreu e que não se casou novamente.",
+    "example": "She's been a widow for ten years."
+  },
+  {
+    "level": "A2",
+    "word": "single",
+    "translation": "solteiro(a)",
+    "definition_en": "Not married or in a romantic relationship.",
+    "definition_pt": "Não casado ou em um relacionamento romântico.",
+    "example": "He's single and lives alone."
+  },
+  {
+    "level": "A2",
+    "word": "married",
+    "translation": "casado(a)",
+    "definition_en": "Having a husband or wife.",
+    "definition_pt": "Ter um marido ou esposa.",
+    "example": "They've been married for twenty years."
+  },
+  {
+    "level": "A2",
+    "word": "divorced",
+    "translation": "divorciado(a)",
+    "definition_en": "No longer married because the marriage has been legally dissolved.",
+    "definition_pt": "Não mais casado porque o casamento foi legalmente dissolvido.",
+    "example": "My parents got divorced when I was ten."
+  },
+  {
+    "level": "A2",
+    "word": "couple",
+    "translation": "casal",
+    "definition_en": "Two people who are married or otherwise closely associated romantically.",
+    "definition_pt": "Duas pessoas que são casadas ou otherwise closely associated romanticamente.",
+    "example": "They're a lovely couple."
+  },
+  {
+    "level": "A2",
+    "word": "adult",
+    "translation": "adulto",
+    "definition_en": "A person who is fully grown or developed.",
+    "definition_pt": "Uma pessoa que está totalmente crescida ou desenvolvida.",
+    "example": "The movie is for adults only."
+  },
+  {
+    "level": "A2",
+    "word": "teenager",
+    "translation": "adolescente",
+    "definition_en": "A person aged between 13 and 19 years.",
+    "definition_pt": "Uma pessoa com idade entre 13 e 19 anos.",
+    "example": "She's a typical teenager who loves music and social media."
+  },
+  {
+    "level": "A2",
+    "word": "relationship",
+    "translation": "relacionamento",
+    "definition_en": "The way in which two or more people are connected.",
+    "definition_pt": "A maneira como duas ou mais pessoas estão conectadas.",
+    "example": "They have a good working relationship."
+  },
+  {
+    "level": "A2",
+    "word": "kiss",
+    "translation": "beijo",
+    "definition_en": "Touch with the lips as a sign of love, sexual desire, or greeting.",
+    "definition_pt": "Tocar com os lábios como sinal de amor, desejo sexual ou cumprimento.",
+    "example": "He gave her a kiss goodbye."
+  },
+  {
+    "level": "A2",
+    "word": "hug",
+    "translation": "abraço",
+    "definition_en": "Squeeze (someone) tightly in one's arms, typically to express affection.",
+    "definition_pt": "Apertar (alguém) firmemente em seus braços, normalmente para expressar afeto.",
+    "example": "She gave me a warm hug when I arrived."
+  },
+  {
+    "level": "A2",
+    "word": "good-looking",
+    "translation": "atraente",
+    "definition_en": "Physically attractive.",
+    "definition_pt": "Fisicamente atraente.",
+    "example": "He's very good-looking."
+  },
+  {
+    "level": "A2",
+    "word": "gorgeous",
+    "translation": "deslumbrante",
+    "definition_en": "Beautiful; very attractive.",
+    "definition_pt": "Bonito; muito atraente.",
+    "example": "She looked gorgeous in her wedding dress."
+  },
+  {
+    "level": "A2",
+    "word": "jealous",
+    "translation": "ciumento(a), com ciúmes",
+    "definition_en": "Feeling or showing envy of someone or their achievements and advantages.",
+    "definition_pt": "Sentindo ou mostrando inveja de alguém ou de suas conquistas e vantagens.",
+    "example": "He was jealous of his friend's new car."
+  },
+  {
+    "level": "A2",
+    "word": "invitation",
+    "translation": "convite",
+    "definition_en": "A written or verbal request inviting someone to go somewhere or to do something.",
+    "definition_pt": "Um pedido escrito ou verbal convidando alguém para ir a algum lugar ou fazer algo.",
+    "example": "I received an invitation to their wedding."
+  },
+  {
+    "level": "A2",
+    "word": "to rely on",
+    "translation": "confiar em",
+    "definition_en": "To depend on with full trust or confidence.",
+    "definition_pt": "Depender com total confiança.",
+    "example": "You can rely on me to keep your secret."
+  },
+  {
+    "level": "A2",
+    "word": "Be careful!",
+    "translation": "Tenha cuidado!",
+    "definition_en": "Used to warn someone to be cautious.",
+    "definition_pt": "Usado para avisar alguém para ser cauteloso.",
+    "example": "Be careful! The floor is wet."
+  },
+  {
+    "level": "A2",
+    "word": "Last week, month",
+    "translation": "semana passada, mês passado",
+    "definition_en": "Referring to the week or month immediately before the current one.",
+    "definition_pt": "Referindo-se à semana ou mês imediatamente antes do atual.",
+    "example": "I saw her last week at the party."
+  },
+  {
+    "level": "A2",
+    "word": "five days ago",
+    "translation": "cinco dias atrás",
+    "definition_en": "Five days before today.",
+    "definition_pt": "Cinco dias antes de hoje.",
+    "example": "He left five days ago."
+  },
+  {
+    "level": "A2",
+    "word": "What is / was the weather like?",
+    "translation": "Como está / estava o clima?",
+    "definition_en": "Asking about atmospheric conditions.",
+    "definition_pt": "Perguntando sobre condições atmosféricas.",
+    "example": "What was the weather like during your vacation?"
+  },
+  {
+    "level": "A2",
+    "word": "to be hot / cold",
+    "translation": "estar quente, estar com calor / estar frio, estar com frio",
+    "definition_en": "To feel or be characterized by high/low temperature.",
+    "definition_pt": "Sentir ou ser caracterizado por temperatura alta/baixa.",
+    "example": "I'm hot, can we turn on the air conditioning?"
+  },
+  {
+    "level": "A2",
+    "word": "to turn down",
+    "translation": "recusar",
+    "definition_en": "To reject or refuse an offer or invitation.",
+    "definition_pt": "Rejeitar ou recusar uma oferta ou convite.",
+    "example": "She turned down the job offer."
+  },
+  {
+    "level": "A2",
+    "word": "to get along",
+    "translation": "se dar bem, lidar, conviver",
+    "definition_en": "To have a harmonious or friendly relationship.",
+    "definition_pt": "Ter um relacionamento harmonioso ou amigável.",
+    "example": "I get along well with my coworkers."
+  },
+  {
+    "level": "A2",
+    "word": "to break up",
+    "translation": "romper",
+    "definition_en": "To end a romantic relationship.",
+    "definition_pt": "Terminar um relacionamento romântico.",
+    "example": "They broke up after three years together."
+  },
+  {
+    "level": "A2",
+    "word": "to go on a date",
+    "translation": "ter um encontro",
+    "definition_en": "To go out with someone romantically.",
+    "definition_pt": "Sair com alguém romanticamente.",
+    "example": "They went on their first date last Friday."
+  },
+  {
+    "level": "A2",
+    "word": "I can't make it to the party.",
+    "translation": "Não vou conseguir ir à festa.",
+    "definition_en": "Used to decline an invitation politely.",
+    "definition_pt": "Usado para recusar um convite educadamente.",
+    "example": "Sorry, I can't make it to the party tonight."
+  },
+  {
+    "level": "A2",
+    "word": "No problem.",
+    "translation": "Sem problema.",
+    "definition_en": "Used to say that something is not difficult or that you are not bothered by it.",
+    "definition_pt": "Usado para dizer que algo não é difícil ou que você não se importa com isso.",
+    "example": "Can you help me? - No problem!"
+  },
+  {
+    "level": "A2",
+    "word": "To have a crush on someone.",
+    "translation": "Estar apaixonado(a) por alguém.",
+    "definition_en": "To have a brief but intense infatuation for someone.",
+    "definition_pt": "Ter uma paixão breve mas intensa por alguém.",
+    "example": "I think I have a crush on my new classmate."
+  },
+  {
+    "level": "A2",
+    "word": "to lose",
+    "translation": "perder",
+    "definition_en": "To be unable to find something or someone.",
+    "definition_pt": "Ser incapaz de encontrar algo ou alguém.",
+    "example": "I always lose my keys."
+  },
+  {
+    "level": "A2",
+    "word": "to put",
+    "translation": "colocar, pôr",
+    "definition_en": "To move something to a particular place or position.",
+    "definition_pt": "Mover algo para um lugar ou posição específica.",
+    "example": "Please put the book on the table."
+  },
+  {
+    "level": "A2",
+    "word": "to rent",
+    "translation": "alugar",
+    "definition_en": "To pay money for the use of something, typically property.",
+    "definition_pt": "Pagar dinheiro pelo uso de algo, normalmente um imóvel.",
+    "example": "We rent an apartment in the city center."
+  },
+  {
+    "level": "A2",
+    "word": "to find",
+    "translation": "encontrar, achar",
+    "definition_en": "To discover or perceive something or someone.",
+    "definition_pt": "Descobrir ou perceber algo ou alguém.",
+    "example": "I can't find my glasses anywhere."
+  },
+  {
+    "level": "A2",
+    "word": "armchair",
+    "translation": "poltrona",
+    "definition_en": "A comfortable, padded chair with side supports for a person's arms.",
+    "definition_pt": "Uma cadeira confortável e acolchoada com apoios laterais para os braços.",
+    "example": "My grandfather's favorite armchair is by the window."
+  },
+  {
+    "level": "A2",
+    "word": "gated community",
+    "translation": "condomínio fechado",
+    "definition_en": "A residential area with controlled entrances for security.",
+    "definition_pt": "Uma área residencial com entradas controladas para segurança.",
+    "example": "They live in a safe gated community."
+  },
+  {
+    "level": "A2",
+    "word": "key",
+    "translation": "chave",
+    "definition_en": "A small piece of metal used to unlock a lock.",
+    "definition_pt": "Um pequeno pedaço de metal usado para destrancar uma fechadura.",
+    "example": "I need my key to open the door."
+  },
+  {
+    "level": "A2",
+    "word": "carpet",
+    "translation": "tapete",
+    "definition_en": "A floor covering made from thick woven fabric.",
+    "definition_pt": "Um revestimento para piso feito de tecido grosso e tecido.",
+    "example": "There's a beautiful red carpet in the living room."
+  },
+  {
+    "level": "A2",
+    "word": "tiny",
+    "translation": "minúsculo",
+    "definition_en": "Very small.",
+    "definition_pt": "Muito pequeno.",
+    "example": "They live in a tiny studio apartment."
+  },
+  {
+    "level": "A2",
+    "word": "ID",
+    "translation": "identidade",
+    "definition_en": "Abbreviation for identification, a document proving who you are.",
+    "definition_pt": "Abreviação de identificação, um documento que prova quem você é.",
+    "example": "You need to show your ID to get into the club."
+  },
+  {
+    "level": "A2",
+    "word": "tidy",
+    "translation": "arrumado",
+    "definition_en": "Neat and orderly in appearance or procedure.",
+    "definition_pt": "Aspecto ou procedimento limpo e ordenado.",
+    "example": "Her room is always very tidy."
+  },
+  {
+    "level": "A2",
+    "word": "space",
+    "translation": "espaço",
+    "definition_en": "A continuous area or expanse that is free or unoccupied.",
+    "definition_pt": "Uma área contínua ou extensão que está livre ou desocupada.",
+    "example": "We need more space for the new furniture."
+  },
+  {
+    "level": "A2",
+    "word": "headphone",
+    "translation": "fone de ouvido",
+    "definition_en": "A pair of earphones typically joined by a band placed over the head.",
+    "definition_pt": "Um par de fones de ouvido normalmente unidos por uma banda colocada sobre a cabeça.",
+    "example": "I use my headphones to listen to music on the bus."
+  },
+  {
+    "level": "A2",
+    "word": "broken",
+    "translation": "quebrado",
+    "definition_en": "Having been fractured or damaged and no longer in one piece or in working order.",
+    "definition_pt": "Que foi fraturado ou danificado e não está mais em uma peça só ou em funcionamento.",
+    "example": "The vase is broken."
+  },
+  {
+    "level": "A2",
+    "word": "studio apartment",
+    "translation": "kitnet",
+    "definition_en": "A small apartment that combines living room, bedroom, and kitchen into a single room.",
+    "definition_pt": "Um pequeno apartamento que combina sala, quarto e cozinha em um único cômodo.",
+    "example": "His first apartment was a studio apartment in Brooklyn."
+  },
+  {
+    "level": "A2",
+    "word": "charger",
+    "translation": "carregador",
+    "definition_en": "A device for charging a battery.",
+    "definition_pt": "Um dispositivo para carregar uma bateria.",
+    "example": "I forgot my phone charger at home."
+  },
+  {
+    "level": "A2",
+    "word": "messy",
+    "translation": "bagunçado",
+    "definition_en": "Untidy or dirty.",
+    "definition_pt": "Desarrumado ou sujo.",
+    "example": "His desk is always so messy."
+  },
+  {
+    "level": "A2",
+    "word": "detached house",
+    "translation": "casa isolada",
+    "definition_en": "A house that stands alone, not connected to any other building.",
+    "definition_pt": "Uma casa que fica sozinha, não conectada a nenhum outro prédio.",
+    "example": "They dream of owning a detached house with a garden."
+  },
+  {
+    "level": "A2",
+    "word": "driver’s license",
+    "translation": "carteira de habilitação",
+    "definition_en": "An official document permitting a person to drive a motor vehicle.",
+    "definition_pt": "Um documento oficial que permite uma pessoa dirigir um veículo motorizado.",
+    "example": "I got my driver's license when I was 18."
+  },
+  {
+    "level": "A2",
+    "word": "dirty",
+    "translation": "sujo",
+    "definition_en": "Covered or marked with an unclean substance.",
+    "definition_pt": "Coberto ou marcado por uma substância não limpa.",
+    "example": "Your shoes are dirty from the garden."
+  },
+  {
+    "level": "A2",
+    "word": "townhouse",
+    "translation": "casa geminada",
+    "definition_en": "A tall, narrow traditional row house, generally having several floors.",
+    "definition_pt": "Uma casa tradicional alta e estreita em uma fileira, geralmente com vários andares.",
+    "example": "Many townhouses in the city have been renovated."
+  },
+  {
+    "level": "A2",
+    "word": "name tag",
+    "translation": "crachá",
+    "definition_en": "A badge or sticker worn to display one's name.",
+    "definition_pt": "Um crachá ou adesivo usado para mostrar o nome de alguém.",
+    "example": "Please wear your name tag during the conference."
+  },
+  {
+    "level": "A2",
+    "word": "chair",
+    "translation": "cadeira",
+    "definition_en": "A separate seat for one person, typically with a back and four legs.",
+    "definition_pt": "Um assento separado para uma pessoa, normalmente com encosto e quatro pernas.",
+    "example": "Pull up a chair and join us."
+  },
+  {
+    "level": "A2",
+    "word": "cottage",
+    "translation": "chalé",
+    "definition_en": "A small house, typically one in the country.",
+    "definition_pt": "Uma casa pequena, normalmente no campo.",
+    "example": "They spent the weekend in a cozy cottage by the lake."
+  },
+  {
+    "level": "A2",
+    "word": "patience",
+    "translation": "paciência",
+    "definition_en": "The capacity to accept or tolerate delay, problems, or suffering without becoming annoyed or anxious.",
+    "definition_pt": "A capacidade de aceitar ou tolerar atraso, problemas ou sofrimento sem ficar aborrecido ou ansioso.",
+    "example": "You need a lot of patience to work with young children."
+  },
+  {
+    "level": "A2",
+    "word": "desk",
+    "translation": "escrivaninha",
+    "definition_en": "A piece of furniture with a flat or sloped surface for writing, reading, or working.",
+    "definition_pt": "Um móvel com uma superfície plana ou inclinada para escrever, ler ou trabalhar.",
+    "example": "My computer is on my desk."
+  },
+  {
+    "level": "A2",
+    "word": "building",
+    "translation": "prédio",
+    "definition_en": "A structure with a roof and walls.",
+    "definition_pt": "Uma estrutura com telhado e paredes.",
+    "example": "That's the tallest building in the city."
+  },
+  {
+    "level": "A2",
+    "word": "temper",
+    "translation": "temperamento, calma",
+    "definition_en": "A person's state of mind, especially in terms of being angry or calm.",
+    "definition_pt": "O estado de espírito de uma pessoa, especialmente em termos de estar com raiva ou calma.",
+    "example": "He has a very short temper."
+  },
+  {
+    "level": "A2",
+    "word": "to the left",
+    "translation": "para a esquerda",
+    "definition_en": "In the direction of the left side.",
+    "definition_pt": "Na direção do lado esquerdo.",
+    "example": "Turn to the left at the next corner."
+  },
+  {
+    "level": "A2",
+    "word": "room",
+    "translation": "cômodo",
+    "definition_en": "A part of a building enclosed by walls, floor, and ceiling.",
+    "definition_pt": "Uma parte de um prédio delimitada por paredes, piso e teto.",
+    "example": "The house has four rooms."
+  },
+  {
+    "level": "A2",
+    "word": "control",
+    "translation": "controle",
+    "definition_en": "The power to influence or direct people's behavior or the course of events.",
+    "definition_pt": "O poder de influenciar ou direcionar o comportamento das pessoas ou o curso dos eventos.",
+    "example": "Try to stay in control of the situation."
+  },
+  {
+    "level": "A2",
+    "word": "to the right",
+    "translation": "para a direita",
+    "definition_en": "In the direction of the right side.",
+    "definition_pt": "Na direção do lado direito.",
+    "example": "The bank is to the right of the post office."
+  },
+  {
+    "level": "A2",
+    "word": "two-story house",
+    "translation": "sobrado",
+    "definition_en": "A house with two floors.",
+    "definition_pt": "Uma casa com dois andares.",
+    "example": "They bought a two-story house in the suburbs."
+  },
+  {
+    "level": "A2",
+    "word": "hope",
+    "translation": "esperança",
+    "definition_en": "A feeling of expectation and desire for a particular thing to happen.",
+    "definition_pt": "Um sentimento de expectativa e desejo por uma coisa em particular acontecer.",
+    "example": "I hope the weather is nice tomorrow."
+  },
+  {
+    "level": "A2",
+    "word": "next to",
+    "translation": "ao lado de",
+    "definition_en": "Adjacent to; at the side of.",
+    "definition_pt": "Adjacente a; ao lado de.",
+    "example": "The pharmacy is next to the supermarket."
+  },
+  {
+    "level": "A2",
+    "word": "first floor",
+    "translation": "primeiro andar",
+    "definition_en": "The floor of a building at ground level (US) or above ground level (UK).",
+    "definition_pt": "O andar de um prédio no nível do solo (EUA) ou acima do nível do solo (UK).",
+    "example": "My office is on the first floor."
+  },
+  {
+    "level": "A2",
+    "word": "behind",
+    "translation": "atrás",
+    "definition_en": "At or to the back or far side of something.",
+    "definition_pt": "Na parte de trás ou no lado distante de algo.",
+    "example": "The garden is behind the house."
+  },
+  {
+    "level": "A2",
+    "word": "elevator",
+    "translation": "elevador",
+    "definition_en": "A platform or compartment housed in a shaft for raising and lowering people or things to different floors.",
+    "definition_pt": "Uma plataforma ou compartimento alojado em um poço para levantar e baixar pessoas ou coisas para andares diferentes.",
+    "example": "Let's take the elevator to the 10th floor."
+  },
+  {
+    "level": "A2",
+    "word": "roommate",
+    "translation": "pessoa com quem divide o quarto/casa",
+    "definition_en": "A person with whom one shares a room or rooms.",
+    "definition_pt": "Uma pessoa com quem se divide um quarto ou cômodos.",
+    "example": "My roommate is from Spain."
+  },
+  {
+    "level": "A2",
+    "word": "plenty of",
+    "translation": "muitos / bastante",
+    "definition_en": "A large amount or number of; more than enough.",
+    "definition_pt": "Uma grande quantidade ou número de; mais do que suficiente.",
+    "example": "Don't worry, we have plenty of time."
+  },
+  {
+    "level": "A2",
+    "word": "to put away",
+    "translation": "guardar",
+    "definition_en": "To put something in the place where it is kept.",
+    "definition_pt": "Colocar algo no lugar onde é guardado.",
+    "example": "Please put away your toys when you finish playing."
+  },
+  {
+    "level": "A2",
+    "word": "a view of",
+    "translation": "vista para",
+    "definition_en": "What can be seen from a particular place.",
+    "definition_pt": "O que pode ser visto de um lugar particular.",
+    "example": "The hotel room has a beautiful view of the mountains."
+  },
+  {
+    "level": "A2",
+    "word": "lost and found",
+    "translation": "achados e perdidos",
+    "definition_en": "A place where items that have been lost are kept until their owners collect them.",
+    "definition_pt": "Um lugar onde itens que foram perdidos são guardados até que seus donos os recolham.",
+    "example": "I left my umbrella on the bus, I'll check the lost and found."
+  },
+  {
+    "level": "A2",
+    "word": "What a mess!",
+    "translation": "Que bagunça!",
+    "definition_en": "An expression used to comment on a very untidy or chaotic situation.",
+    "definition_pt": "Uma expressão usada para comentar sobre uma situação muito desarrumada ou caótica.",
+    "example": "Look at this room! What a mess!"
+  },
+  {
+    "level": "A2",
+    "word": "to own a place",
+    "translation": "ter seu próprio lugar",
+    "definition_en": "To possess a property or residence.",
+    "definition_pt": "Possuir uma propriedade ou residência.",
+    "example": "They finally saved enough money to own a place."
+  },
+  {
+    "level": "A2",
+    "word": "I got lost.",
+    "translation": "Eu me perdi.",
+    "definition_en": "To become unable to find one's way.",
+    "definition_pt": "Ficar incapaz de encontrar o caminho.",
+    "example": "I got lost in the new neighborhood."
+  },
+  {
+    "level": "A2",
+    "word": "It’s broken.",
+    "translation": "Está quebrado.",
+    "definition_en": "Something is not working because it is damaged.",
+    "definition_pt": "Algo não está funcionando porque está danificado.",
+    "example": "The printer is broken, we need to call someone to fix it."
+  },
+  {
+    "level": "A2",
+    "word": "to pay rent",
+    "translation": "pagar aluguel",
+    "definition_en": "To make regular payments for the use of a property.",
+    "definition_pt": "Fazer pagamentos regulares pelo uso de uma propriedade.",
+    "example": "I pay rent on the first of every month."
+  },
+  {
+    "level": "A2",
+    "word": "I lost my mind.",
+    "translation": "Eu perdi a cabeça.",
+    "definition_en": "To become crazy or very angry.",
+    "definition_pt": "Ficar louco ou com muita raiva.",
+    "example": "When I saw the mess, I almost lost my mind."
+  },
+  {
+    "level": "A2",
+    "word": "to clean up",
+    "translation": "limpar",
+    "definition_en": "To make a place tidy and clean.",
+    "definition_pt": "Deixar um lugar arrumado e limpo.",
+    "example": "We need to clean up the kitchen after dinner."
+  },
+  {
+    "level": "A2",
+    "word": "to take the elevator",
+    "translation": "pegar o elevador",
+    "definition_en": "To use the elevator to go to a different floor.",
+    "definition_pt": "Usar o elevador para ir para um andar diferente.",
+    "example": "It's faster to take the elevator to the 15th floor."
+  },
+  {
+    "level": "A2",
+    "word": "I lost faith in",
+    "translation": "Eu perdi a fé em",
+    "definition_en": "To stop believing in or trusting someone or something.",
+    "definition_pt": "Parar de acreditar ou confiar em alguém ou algo.",
+    "example": "I lost faith in the government after that scandal."
+  },
+  {
+    "level": "A2",
     "word": "Neighbor",
     "translation": "Vizinho",
     "definition_en": "A person living next door or nearby.",
@@ -1054,6 +1926,728 @@
     "definition_en": "The act of traveling from one place to another.",
     "definition_pt": "O ato de viajar de um lugar para outro.",
     "example": "The train journey took three hours."
+  },
+
+  {
+    "level": "B1",
+    "word": "account",
+    "translation": "conta",
+    "definition_en": "A arrangement with a bank to keep money there and withdraw it",
+    "definition_pt": "Um acordo com um banco para guardar dinheiro e sacá-lo",
+    "example": "I need to check my bank account balance."
+  },
+  {
+    "level": "B1",
+    "word": "allowance",
+    "translation": "mesada, subsídio",
+    "definition_en": "Amount of money given regularly",
+    "definition_pt": "Quantia de dinheiro dada regularmente",
+    "example": "Children get weekly allowance from their parents."
+  },
+  {
+    "level": "B1",
+    "word": "article",
+    "translation": "artigo",
+    "definition_en": "Piece of writing in newspaper/magazine",
+    "definition_pt": "Texto em jornal/revista",
+    "example": "She wrote an article about climate change."
+  },
+  {
+    "level": "B1",
+    "word": "attack",
+    "translation": "ataque",
+    "definition_en": "Violent act against someone/something",
+    "definition_pt": "Ato violento contra alguém/algo",
+    "example": "The cyber attack affected many computers."
+  },
+  {
+    "level": "B1",
+    "word": "budget",
+    "translation": "orçamento",
+    "definition_en": "Plan for income and expenses",
+    "definition_pt": "Plano para receitas e despesas",
+    "example": "We need to create a monthly budget."
+  },
+  {
+    "level": "B1",
+    "word": "carefully",
+    "translation": "cuidadosamente",
+    "definition_en": "In a careful manner",
+    "definition_pt": "De maneira cuidadosa",
+    "example": "Read the instructions carefully."
+  },
+  {
+    "level": "B1",
+    "word": "content creator",
+    "translation": "criador de conteúdo",
+    "definition_en": "Person who creates digital content",
+    "definition_pt": "Pessoa que cria conteúdo digital",
+    "example": "She works as a content creator on YouTube."
+  },
+  {
+    "level": "B1",
+    "word": "current",
+    "translation": "atual",
+    "definition_en": "Happening now; present",
+    "definition_pt": "Acontecendo agora; presente",
+    "example": "What's the current situation?"
+  },
+  {
+    "level": "B1",
+    "word": "cybercrime",
+    "translation": "crime cibernético",
+    "definition_en": "Criminal activities online",
+    "definition_pt": "Atividades criminosas online",
+    "example": "Cybercrime is increasing worldwide."
+  },
+  {
+    "level": "B1",
+    "word": "expenses",
+    "translation": "despesas",
+    "definition_en": "Money spent on something",
+    "definition_pt": "Dinheiro gasto em algo",
+    "example": "Business expenses can be tax-deductible."
+  },
+  {
+    "level": "B1",
+    "word": "headline",
+    "translation": "manchete",
+    "definition_en": "Main news story title",
+    "definition_pt": "Título principal da notícia",
+    "example": "The headline caught everyone's attention."
+  },
+  {
+    "level": "B1",
+    "word": "latest",
+    "translation": "mais recente",
+    "definition_en": "Most recent",
+    "definition_pt": "Mais recente",
+    "example": "This is the latest model available."
+  },
+  {
+    "level": "B1",
+    "word": "management",
+    "translation": "gerenciamento",
+    "definition_en": "Process of controlling/organizing",
+    "definition_pt": "Processo de controlar/organizar",
+    "example": "Good time management is essential."
+  },
+  {
+    "level": "B1",
+    "word": "need",
+    "translation": "necessidade",
+    "definition_en": "Something necessary/required",
+    "definition_pt": "Algo necessário/requerido",
+    "example": "Basic needs include food and shelter."
+  },
+  {
+    "level": "B1",
+    "word": "newsreels",
+    "translation": "noticiários",
+    "definition_en": "Short news films",
+    "definition_pt": "Pequenos filmes de notícias",
+    "example": "Newsreels were popular before television."
+  },
+  {
+    "level": "B1",
+    "word": "password",
+    "translation": "senha",
+    "definition_en": "Secret word for access",
+    "definition_pt": "Palavra secreta para acesso",
+    "example": "Change your password regularly for security."
+  },
+  {
+    "level": "B1",
+    "word": "pitfall",
+    "translation": "armadilha, risco",
+    "definition_en": "Hidden danger/difficulty",
+    "definition_pt": "Perigo/dificuldade oculta",
+    "example": "Be aware of the pitfalls in the contract."
+  },
+  {
+    "level": "B1",
+    "word": "priority",
+    "translation": "prioridade",
+    "definition_en": "Something more important",
+    "definition_pt": "Algo mais importante",
+    "example": "Safety is our top priority."
+  },
+  {
+    "level": "B1",
+    "word": "private",
+    "translation": "privado",
+    "definition_en": "Not public; personal",
+    "definition_pt": "Não público; pessoal",
+    "example": "This is a private conversation."
+  },
+  {
+    "level": "B1",
+    "word": "public",
+    "translation": "público",
+    "definition_en": "Open to everyone",
+    "definition_pt": "Aberto para todos",
+    "example": "Public parks are free for everyone."
+  },
+  {
+    "level": "B1",
+    "word": "publicly",
+    "translation": "publicamente",
+    "definition_en": "In public view",
+    "definition_pt": "Em vista pública",
+    "example": "He apologized publicly for his mistake."
+  },
+  {
+    "level": "B1",
+    "word": "savings",
+    "translation": "economias",
+    "definition_en": "Money saved over time",
+    "definition_pt": "Dinheiro economizado com o tempo",
+    "example": "They used their savings to buy a house."
+  },
+  {
+    "level": "B1",
+    "word": "scam",
+    "translation": "golpe",
+    "definition_en": "Dishonest scheme",
+    "definition_pt": "Esquema desonesto",
+    "example": "Be careful of online scams."
+  },
+  {
+    "level": "B1",
+    "word": "scandal",
+    "translation": "escândalo",
+    "definition_en": "Shocking/immoral event",
+    "definition_pt": "Evento chocante/imoral",
+    "example": "The political scandal made headlines."
+  },
+  {
+    "level": "B1",
+    "word": "sensitive",
+    "translation": "sensível",
+    "definition_en": "Easily affected/damaged",
+    "definition_pt": "Facilmente afetado/danificado",
+    "example": "This is sensitive information."
+  },
+  {
+    "level": "B1",
+    "word": "stability",
+    "translation": "estabilidade",
+    "definition_en": "State of being stable",
+    "definition_pt": "Estado de estar estável",
+    "example": "Economic stability is important for growth."
+  },
+  {
+    "level": "B1",
+    "word": "subscription",
+    "translation": "assinatura",
+    "definition_en": "Regular payment for service",
+    "definition_pt": "Pagamento regular por serviço",
+    "example": "I have a subscription to the magazine."
+  },
+  {
+    "level": "B1",
+    "word": "suspicious",
+    "translation": "suspeito",
+    "definition_en": "Causing suspicion",
+    "definition_pt": "Causando suspeita",
+    "example": "The package looked suspicious."
+  },
+  {
+    "level": "B1",
+    "word": "the press",
+    "translation": "imprensa",
+    "definition_en": "News media organizations",
+    "definition_pt": "Organizações de mídia noticiosa",
+    "example": "The press reported the event widely."
+  },
+  {
+    "level": "B1",
+    "word": "victim",
+    "translation": "vítima",
+    "definition_en": "Person harmed by crime/accident",
+    "definition_pt": "Pessoa prejudicada por crime/acidente",
+    "example": "Help was provided to the victims."
+  },
+  {
+    "level": "B1",
+    "word": "awareness",
+    "translation": "consciência",
+    "definition_en": "Knowledge/perception of situation",
+    "definition_pt": "Conhecimento/percepção da situação",
+    "example": "We need to raise awareness about recycling."
+  },
+  {
+    "level": "B1",
+    "word": "benefit",
+    "translation": "benefício",
+    "definition_en": "Advantage; positive result",
+    "definition_pt": "Vantagem; resultado positivo",
+    "example": "Exercise has many health benefits."
+  },
+  {
+    "level": "B1",
+    "word": "campaign",
+    "translation": "campanha",
+    "definition_en": "Organized effort for cause",
+    "definition_pt": "Esforço organizado para causa",
+    "example": "The environmental campaign was successful."
+  },
+  {
+    "level": "B1",
+    "word": "challenging",
+    "translation": "desafiador",
+    "definition_en": "Difficult in stimulating way",
+    "definition_pt": "Difícil de maneira estimulante",
+    "example": "It's a challenging but rewarding job."
+  },
+  {
+    "level": "B1",
+    "word": "charity",
+    "translation": "caridade",
+    "definition_en": "Organization helping needy",
+    "definition_pt": "Organização ajudando necessitados",
+    "example": "They donated money to charity."
+  },
+  {
+    "level": "B1",
+    "word": "chemicals",
+    "translation": "produtos químicos",
+    "definition_en": "Substances used in chemistry",
+    "definition_pt": "Substâncias usadas em química",
+    "example": "Handle these chemicals with care."
+  },
+  {
+    "level": "B1",
+    "word": "consequence",
+    "translation": "consequência",
+    "definition_en": "Result/effect of action",
+    "definition_pt": "Resultado/efeito de ação",
+    "example": "Consider the consequences of your decision."
+  },
+  {
+    "level": "B1",
+    "word": "conservation",
+    "translation": "conservação",
+    "definition_en": "Protection of environment",
+    "definition_pt": "Proteção do meio ambiente",
+    "example": "Wildlife conservation is important."
+  },
+  {
+    "level": "B1",
+    "word": "diversity",
+    "translation": "diversidade",
+    "definition_en": "Variety of different things",
+    "definition_pt": "Variedade de coisas diferentes",
+    "example": "Cultural diversity enriches society."
+  },
+  {
+    "level": "B1",
+    "word": "ecological",
+    "translation": "ecológico",
+    "definition_en": "Relating to environment",
+    "definition_pt": "Relacionado ao meio ambiente",
+    "example": "We need ecological solutions."
+  },
+  {
+    "level": "B1",
+    "word": "effect",
+    "translation": "efeito",
+    "definition_en": "Change resulting from action",
+    "definition_pt": "Mudança resultante de ação",
+    "example": "The medicine had no effect."
+  },
+  {
+    "level": "B1",
+    "word": "empathy",
+    "translation": "empatia",
+    "definition_en": "Understanding others' feelings",
+    "definition_pt": "Compreensão dos sentimentos alheios",
+    "example": "She showed empathy toward the patient."
+  },
+  {
+    "level": "B1",
+    "word": "ethical",
+    "translation": "ético",
+    "definition_en": "Morally right/good",
+    "definition_pt": "Moralmente correto/bom",
+    "example": "We must make ethical choices."
+  },
+  {
+    "level": "B1",
+    "word": "fundraising",
+    "translation": "arrecadação de fundos",
+    "definition_en": "Collecting money for cause",
+    "definition_pt": "Coletando dinheiro para causa",
+    "example": "The fundraising event was successful."
+  },
+  {
+    "level": "B1",
+    "word": "hunger",
+    "translation": "fome",
+    "definition_en": "Need for food",
+    "definition_pt": "Necessidade de comida",
+    "example": "Many people suffer from hunger."
+  },
+  {
+    "level": "B1",
+    "word": "individualism",
+    "translation": "individualismo",
+    "definition_en": "Focus on individual rights",
+    "definition_pt": "Foco nos direitos individuais",
+    "example": "Individualism is valued in some cultures."
+  },
+  {
+    "level": "B1",
+    "word": "initiative",
+    "translation": "iniciativa",
+    "definition_en": "Ability to act independently",
+    "definition_pt": "Habilidade de agir independentemente",
+    "example": "She took the initiative to solve the problem."
+  },
+  {
+    "level": "B1",
+    "word": "natural resource",
+    "translation": "recurso natural",
+    "definition_en": "Materials from nature",
+    "definition_pt": "Materiais da natureza",
+    "example": "Water is a precious natural resource."
+  },
+  {
+    "level": "B1",
+    "word": "pioneer",
+    "translation": "pioneiro",
+    "definition_en": "First explorer/innovator",
+    "definition_pt": "Primeiro explorador/inovador",
+    "example": "She was a pioneer in medical research."
+  },
+  {
+    "level": "B1",
+    "word": "reasonable",
+    "translation": "razoável",
+    "definition_en": "Fair and sensible",
+    "definition_pt": "Justo e sensato",
+    "example": "The price seems reasonable."
+  },
+  {
+    "level": "B1",
+    "word": "reforestation",
+    "translation": "reflorestamento",
+    "definition_en": "Planting trees in deforested areas",
+    "definition_pt": "Plantio de árvores em áreas desmatadas",
+    "example": "Reforestation helps combat climate change."
+  },
+  {
+    "level": "B1",
+    "word": "regularly",
+    "translation": "regularmente",
+    "definition_en": "At regular intervals",
+    "definition_pt": "Em intervalos regulares",
+    "example": "Exercise regularly for good health."
+  },
+  {
+    "level": "B1",
+    "word": "self-sufficient",
+    "translation": "autossuficiente",
+    "definition_en": "Able to provide for oneself",
+    "definition_pt": "Capaz de prover para si mesmo",
+    "example": "The farm is self-sufficient in food."
+  },
+  {
+    "level": "B1",
+    "word": "solar panel",
+    "translation": "painel solar",
+    "definition_en": "Device converting sunlight to electricity",
+    "definition_pt": "Dispositivo que converte luz solar em eletricidade",
+    "example": "Solar panels reduce electricity bills."
+  },
+  {
+    "level": "B1",
+    "word": "solidarity",
+    "translation": "solidariedade",
+    "definition_en": "Unity in action/interest",
+    "definition_pt": "Unidade em ação/interesse",
+    "example": "There was solidarity among the workers."
+  },
+  {
+    "level": "B1",
+    "word": "survival",
+    "translation": "sobrevivência",
+    "definition_en": "State of continuing to live",
+    "definition_pt": "Estado de continuar vivendo",
+    "example": "Basic survival skills are important."
+  },
+  {
+    "level": "B1",
+    "word": "sustainable",
+    "translation": "sustentável",
+    "definition_en": "Able to be maintained",
+    "definition_pt": "Capaz de ser mantido",
+    "example": "We need sustainable development."
+  },
+  {
+    "level": "B1",
+    "word": "toxic",
+    "translation": "tóxico",
+    "definition_en": "Poisonous; harmful",
+    "definition_pt": "Venenoso; prejudicial",
+    "example": "Toxic waste must be handled carefully."
+  },
+  {
+    "level": "B1",
+    "word": "urban area",
+    "translation": "área urbana",
+    "definition_en": "City/town region",
+    "definition_pt": "Região de cidade/vila",
+    "example": "Most people live in urban areas."
+  },
+  {
+    "level": "B1",
+    "word": "urban farming",
+    "translation": "agricultura urbana",
+    "definition_en": "Growing food in cities",
+    "definition_pt": "Cultivar comida em cidades",
+    "example": "Urban farming is becoming popular."
+  },
+
+  {
+    "level": "B1",
+    "word": "ambitious",
+    "translation": "ambicioso",
+    "definition_en": "Having or showing a strong desire and determination to succeed.",
+    "definition_pt": "Ter ou mostrar um forte desejo e determinação para ter sucesso.",
+    "example": "She's very ambitious and wants to become CEO by age 35."
+  },
+  {
+    "level": "B1",
+    "word": "apology",
+    "translation": "desculpas",
+    "definition_en": "A regretful acknowledgment of an offense or failure.",
+    "definition_pt": "Um reconhecimento pesaroso de uma ofensa ou falha.",
+    "example": "He offered a sincere apology for being late."
+  },
+  {
+    "level": "B1",
+    "word": "breakdown",
+    "translation": "colapso, análise detalhada",
+    "definition_en": "A failure of a relationship or system; OR a detailed analysis.",
+    "definition_pt": "Uma falha de um relacionamento ou sistema; OU uma análise detalhada.",
+    "example": "The breakdown of communication led to many misunderstandings."
+  },
+  {
+    "level": "B1",
+    "word": "cause",
+    "translation": "causa",
+    "definition_en": "A person or thing that gives rise to an action, phenomenon, or condition.",
+    "definition_pt": "Uma pessoa ou coisa que dá origem a uma ação, fenômeno ou condição.",
+    "example": "The investigation aimed to find the cause of the accident."
+  },
+  {
+    "level": "B1",
+    "word": "cheerful",
+    "translation": "alegre, animado",
+    "definition_en": "Noticeably happy and optimistic.",
+    "definition_pt": "Visivelmente feliz e otimista.",
+    "example": "She has a cheerful personality that brightens the room."
+  },
+  {
+    "level": "B1",
+    "word": "communicative",
+    "translation": "comunicativo",
+    "definition_en": "Willing, eager, or able to talk or impart information.",
+    "definition_pt": "Disposto, ansioso ou capaz de falar ou transmitir informações.",
+    "example": "He's very communicative and always shares his ideas."
+  },
+  {
+    "level": "B1",
+    "word": "development",
+    "translation": "desenvolvimento",
+    "definition_en": "The process of developing or being developed.",
+    "definition_pt": "O processo de desenvolver ou ser desenvolvido.",
+    "example": "The development of new technology is happening rapidly."
+  },
+  {
+    "level": "B1",
+    "word": "emotion",
+    "translation": "emoção",
+    "definition_en": "A natural instinctive state of mind deriving from one's circumstances, mood, or relationships with others.",
+    "definition_pt": "Um estado mental instintivo natural derivado das circunstâncias, humor ou relacionamentos com outros.",
+    "example": "She couldn't hide her emotion when she received the award."
+  },
+  {
+    "level": "B1",
+    "word": "enthusiastic",
+    "translation": "entusiasmado",
+    "definition_en": "Having or showing intense and eager enjoyment, interest, or approval.",
+    "definition_pt": "Ter ou mostrar intenso e ansioso prazer, interesse ou aprovação.",
+    "example": "The team was enthusiastic about the new project."
+  },
+  {
+    "level": "B1",
+    "word": "fact",
+    "translation": "fato",
+    "definition_en": "A thing that is known or proved to be true.",
+    "definition_pt": "Uma coisa que é conhecida ou provada ser verdadeira.",
+    "example": "It's a fact that water boils at 100 degrees Celsius."
+  },
+  {
+    "level": "B1",
+    "word": "growth",
+    "translation": "crescimento",
+    "definition_en": "The process of increasing in physical size; OR the development of something.",
+    "definition_pt": "O processo de aumentar em tamanho físico; OU o desenvolvimento de algo.",
+    "example": "The company has shown significant growth this year."
+  },
+  {
+    "level": "B1",
+    "word": "guidance",
+    "translation": "orientação",
+    "definition_en": "Advice or information aimed at resolving a problem or difficulty.",
+    "definition_pt": "Conselho ou informação destinada a resolver um problema ou dificuldade.",
+    "example": "She provides guidance to new employees during their training."
+  },
+  {
+    "level": "B1",
+    "word": "harmful",
+    "translation": "prejudicial",
+    "definition_en": "Causing or likely to cause harm.",
+    "definition_pt": "Causando ou provavelmente causando dano.",
+    "example": "Smoking is harmful to your health."
+  },
+  {
+    "level": "B1",
+    "word": "impulsive",
+    "translation": "impulsivo",
+    "definition_en": "Acting or done without forethought.",
+    "definition_pt": "Agir ou feito sem premeditação.",
+    "example": "His impulsive decision led to unexpected problems."
+  },
+  {
+    "level": "B1",
+    "word": "isolation",
+    "translation": "isolamento",
+    "definition_en": "The process or fact of isolating or being isolated.",
+    "definition_pt": "O processo ou fato de isolar ou ser isolado.",
+    "example": "The patient was placed in isolation to prevent spreading the disease."
+  },
+  {
+    "level": "B1",
+    "word": "loneliness",
+    "translation": "solidão",
+    "definition_en": "Sadness because one has no friends or company.",
+    "definition_pt": "Tristeza porque alguém não tem amigos ou companhia.",
+    "example": "Many elderly people experience loneliness."
+  },
+  {
+    "level": "B1",
+    "word": "non-violent",
+    "translation": "não-violento",
+    "definition_en": "Using peaceful means rather than force, especially to bring about political or social change.",
+    "definition_pt": "Usando meios pacíficos em vez de força, especialmente para provocar mudança política ou social.",
+    "example": "They organized a non-violent protest against the new law."
+  },
+  {
+    "level": "B1",
+    "word": "performance",
+    "translation": "desempenho, performance",
+    "definition_en": "The action or process of performing a task or function.",
+    "definition_pt": "A ação ou processo de executar uma tarefa ou função.",
+    "example": "Her performance in the play was outstanding."
+  },
+  {
+    "level": "B1",
+    "word": "pressure",
+    "translation": "pressão",
+    "definition_en": "Continuous physical force exerted on or against an object; OR mental stress.",
+    "definition_pt": "Força física contínua exercida sobre ou contra um objeto; OU estresse mental.",
+    "example": "He works well under pressure."
+  },
+  {
+    "level": "B1",
+    "word": "purpose",
+    "translation": "propósito",
+    "definition_en": "The reason for which something is done or created or for which something exists.",
+    "definition_pt": "A razão pela qual algo é feito ou criado ou pela qual algo existe.",
+    "example": "What's the purpose of your visit?"
+  },
+  {
+    "level": "B1",
+    "word": "resolution",
+    "translation": "resolução",
+    "definition_en": "A firm decision to do or not to do something.",
+    "definition_pt": "Uma decisão firme de fazer ou não fazer algo.",
+    "example": "She made a resolution to exercise more often."
+  },
+  {
+    "level": "B1",
+    "word": "role model",
+    "translation": "modelo a seguir",
+    "definition_en": "A person looked to by others as an example to be imitated.",
+    "definition_pt": "Uma pessoa vista por outros como um exemplo a ser imitado.",
+    "example": "Teachers should be good role models for their students."
+  },
+  {
+    "level": "B1",
+    "word": "support",
+    "translation": "apoio",
+    "definition_en": "Bear all or part of the weight of; hold up; OR give assistance to.",
+    "definition_pt": "Suportar todo ou parte do peso de; segurar; OU dar assistência a.",
+    "example": "I appreciate your support during this difficult time."
+  },
+  {
+    "level": "B1",
+    "word": "temper",
+    "translation": "temperamento",
+    "definition_en": "A person's state of mind seen in terms of their being angry or calm.",
+    "definition_pt": "O estado de espírito de uma pessoa visto em termos de estar com raiva ou calma.",
+    "example": "He has a quick temper and gets angry easily."
+  },
+  {
+    "level": "B1",
+    "word": "troublemaker",
+    "translation": "encrenqueiro",
+    "definition_en": "A person who habitually causes difficulty or problems.",
+    "definition_pt": "Uma pessoa que habitualmente causa dificuldade ou problemas.",
+    "example": "The teacher separated the troublemakers in the classroom."
+  },
+  {
+    "level": "B1",
+    "word": "unacceptable",
+    "translation": "inaceitável",
+    "definition_en": "Not satisfactory or allowable.",
+    "definition_pt": "Não satisfatório ou permitido.",
+    "example": "His behavior was completely unacceptable."
+  },
+  {
+    "level": "B1",
+    "word": "understanding",
+    "translation": "compreensão",
+    "definition_en": "Sympathetic awareness or tolerance.",
+    "definition_pt": "Consciência ou tolerância simpática.",
+    "example": "Thank you for your understanding about the delay."
+  },
+  {
+    "level": "B1",
+    "word": "valuable",
+    "translation": "valioso",
+    "definition_en": "Worth a great deal of money; OR extremely useful or important.",
+    "definition_pt": "Valendo muito dinheiro; OU extremamente útil ou importante.",
+    "example": "She gave me some valuable advice."
+  },
+  {
+    "level": "B1",
+    "word": "weakness",
+    "translation": "fraqueza",
+    "definition_en": "The state or condition of lacking strength.",
+    "definition_pt": "O estado ou condição de faltar força.",
+    "example": "His main weakness is that he's too trusting."
+  },
+  {
+    "level": "B1",
+    "word": "well-being",
+    "translation": "bem-estar",
+    "definition_en": "The state of being comfortable, healthy, or happy.",
+    "definition_pt": "O estado de estar confortável, saudável ou feliz.",
+    "example": "Regular exercise contributes to your overall well-being."
   },
   {
     "level": "B1",
@@ -4719,14 +6313,7 @@
     "definition_pt": "Uma série de coisas, eventos ou pessoas de tipo semelhante ou natureza relacionada vindo um após o outro.",
     "example": "A series of accidents forced the road to close."
   },
-  {
-    "level": "B2",
-    "word": "Sex",
-    "translation": "Sexo",
-    "definition_en": "Either of the two main categories (male and female) into which humans and most other living things are divided.",
-    "definition_pt": "Qualquer uma das duas categorias principais (masculino e feminino) nas quais os humanos e a maioria dos outros seres vivos são divididos.",
-    "example": "Discrimination on the basis of sex is illegal."
-  },
+  
   {
     "level": "B2",
     "word": "Shift",
